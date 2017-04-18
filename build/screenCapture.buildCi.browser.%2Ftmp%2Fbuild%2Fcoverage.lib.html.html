@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-sax/sax/lib/sax.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-sax/node_modules/sax/lib/sax.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-sax">npmtest-sax (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-sax/sax/lib/sax.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-sax/node_modules/sax/lib/sax.js</span></h1>
     <h2>
         
         Statements: <span class="metric">14.17% <small>(108 / 762)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric">30 statements, 2 functions, 17 branches</span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-sax/sax/lib/</a> &#187; sax.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-sax/node_modules/sax/lib/</a> » sax.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -3379,7 +3377,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">;(function (sax) { // wrapper for non-node envs
-  sax.parser = <span class="fstat-no" title="function not covered" >function (strict, opt) {</span> <span class="cstat-no" title="statement not covered" >return new SAXParser(strict, opt) }</span>
+  sax.parser = <span class="fstat-no" title="function not covered">function (strict, opt) {</span> <span class="cstat-no" title="statement not covered">return new SAXParser(strict, opt) }</span>
   sax.SAXParser = SAXParser
   sax.SAXStream = SAXStream
   sax.createStream = createStream
@@ -3422,176 +3420,176 @@
     'closenamespace'
   ]
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function SAXParser (strict, opt) {</span>
-<span class="cstat-no" title="statement not covered" >    if (!(this instanceof SAXParser)) {</span>
-<span class="cstat-no" title="statement not covered" >      return new SAXParser(strict, opt)</span>
+<span class="fstat-no" title="function not covered">  function SAXParser (strict, opt) {</span>
+<span class="cstat-no" title="statement not covered">    if (!(this instanceof SAXParser)) {</span>
+<span class="cstat-no" title="statement not covered">      return new SAXParser(strict, opt)</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var parser = this</span>
-<span class="cstat-no" title="statement not covered" >    clearBuffers(parser)</span>
-<span class="cstat-no" title="statement not covered" >    parser.q = parser.c = ''</span>
-<span class="cstat-no" title="statement not covered" >    parser.bufferCheckPosition = sax.MAX_BUFFER_LENGTH</span>
-<span class="cstat-no" title="statement not covered" >    parser.opt = opt || {}</span>
-<span class="cstat-no" title="statement not covered" >    parser.opt.lowercase = parser.opt.lowercase || parser.opt.lowercasetags</span>
-<span class="cstat-no" title="statement not covered" >    parser.looseCase = parser.opt.lowercase ? 'toLowerCase' : 'toUpperCase'</span>
-<span class="cstat-no" title="statement not covered" >    parser.tags = []</span>
-<span class="cstat-no" title="statement not covered" >    parser.closed = parser.closedRoot = parser.sawRoot = false</span>
-<span class="cstat-no" title="statement not covered" >    parser.tag = parser.error = null</span>
-<span class="cstat-no" title="statement not covered" >    parser.strict = !!strict</span>
-<span class="cstat-no" title="statement not covered" >    parser.noscript = !!(strict || parser.opt.noscript)</span>
-<span class="cstat-no" title="statement not covered" >    parser.state = S.BEGIN</span>
-<span class="cstat-no" title="statement not covered" >    parser.strictEntities = parser.opt.strictEntities</span>
-<span class="cstat-no" title="statement not covered" >    parser.ENTITIES = parser.strictEntities ? Object.create(sax.XML_ENTITIES) : Object.create(sax.ENTITIES)</span>
-<span class="cstat-no" title="statement not covered" >    parser.attribList = []</span>
+<span class="cstat-no" title="statement not covered">    var parser = this</span>
+<span class="cstat-no" title="statement not covered">    clearBuffers(parser)</span>
+<span class="cstat-no" title="statement not covered">    parser.q = parser.c = ''</span>
+<span class="cstat-no" title="statement not covered">    parser.bufferCheckPosition = sax.MAX_BUFFER_LENGTH</span>
+<span class="cstat-no" title="statement not covered">    parser.opt = opt || {}</span>
+<span class="cstat-no" title="statement not covered">    parser.opt.lowercase = parser.opt.lowercase || parser.opt.lowercasetags</span>
+<span class="cstat-no" title="statement not covered">    parser.looseCase = parser.opt.lowercase ? 'toLowerCase' : 'toUpperCase'</span>
+<span class="cstat-no" title="statement not covered">    parser.tags = []</span>
+<span class="cstat-no" title="statement not covered">    parser.closed = parser.closedRoot = parser.sawRoot = false</span>
+<span class="cstat-no" title="statement not covered">    parser.tag = parser.error = null</span>
+<span class="cstat-no" title="statement not covered">    parser.strict = !!strict</span>
+<span class="cstat-no" title="statement not covered">    parser.noscript = !!(strict || parser.opt.noscript)</span>
+<span class="cstat-no" title="statement not covered">    parser.state = S.BEGIN</span>
+<span class="cstat-no" title="statement not covered">    parser.strictEntities = parser.opt.strictEntities</span>
+<span class="cstat-no" title="statement not covered">    parser.ENTITIES = parser.strictEntities ? Object.create(sax.XML_ENTITIES) : Object.create(sax.ENTITIES)</span>
+<span class="cstat-no" title="statement not covered">    parser.attribList = []</span>
 &nbsp;
     // namespaces form a prototype chain.
     // it always points at the current tag,
     // which protos to its parent tag.
-<span class="cstat-no" title="statement not covered" >    if (parser.opt.xmlns) {</span>
-<span class="cstat-no" title="statement not covered" >      parser.ns = Object.create(rootNS)</span>
+<span class="cstat-no" title="statement not covered">    if (parser.opt.xmlns) {</span>
+<span class="cstat-no" title="statement not covered">      parser.ns = Object.create(rootNS)</span>
     }
 &nbsp;
     // mostly just for error reporting
-<span class="cstat-no" title="statement not covered" >    parser.trackPosition = parser.opt.position !== false</span>
-<span class="cstat-no" title="statement not covered" >    if (parser.trackPosition) {</span>
-<span class="cstat-no" title="statement not covered" >      parser.position = parser.line = parser.column = 0</span>
+<span class="cstat-no" title="statement not covered">    parser.trackPosition = parser.opt.position !== false</span>
+<span class="cstat-no" title="statement not covered">    if (parser.trackPosition) {</span>
+<span class="cstat-no" title="statement not covered">      parser.position = parser.line = parser.column = 0</span>
     }
-<span class="cstat-no" title="statement not covered" >    emit(parser, 'onready')</span>
+<span class="cstat-no" title="statement not covered">    emit(parser, 'onready')</span>
   }
 &nbsp;
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!Object.create) {
-<span class="cstat-no" title="statement not covered" >    Object.create = <span class="fstat-no" title="function not covered" >function (o) {</span></span>
-<span class="fstat-no" title="function not covered" >      function F () {</span>}
-<span class="cstat-no" title="statement not covered" >      F.prototype = o</span>
-<span class="cstat-no" title="statement not covered" >      var newf = new F()</span>
-<span class="cstat-no" title="statement not covered" >      return newf</span>
-    }
-  }
-&nbsp;
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!Object.keys) {
-<span class="cstat-no" title="statement not covered" >    Object.keys = <span class="fstat-no" title="function not covered" >function (o) {</span></span>
-<span class="cstat-no" title="statement not covered" >      var a = []</span>
-<span class="cstat-no" title="statement not covered" >      for (var i in o) <span class="cstat-no" title="statement not covered" >if (o.hasOwnProperty(i)) <span class="cstat-no" title="statement not covered" >a.push(i)</span></span></span>
-<span class="cstat-no" title="statement not covered" >      return a</span>
+  <span class="missing-if-branch" title="if path not taken">I</span>if (!Object.create) {
+<span class="cstat-no" title="statement not covered">    Object.create = <span class="fstat-no" title="function not covered">function (o) {</span></span>
+<span class="fstat-no" title="function not covered">      function F () {</span>}
+<span class="cstat-no" title="statement not covered">      F.prototype = o</span>
+<span class="cstat-no" title="statement not covered">      var newf = new F()</span>
+<span class="cstat-no" title="statement not covered">      return newf</span>
     }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function checkBufferLength (parser) {</span>
-<span class="cstat-no" title="statement not covered" >    var maxAllowed = Math.max(sax.MAX_BUFFER_LENGTH, 10)</span>
-<span class="cstat-no" title="statement not covered" >    var maxActual = 0</span>
-<span class="cstat-no" title="statement not covered" >    for (var i = 0, l = buffers.length; i &lt; l; i++) {</span>
-<span class="cstat-no" title="statement not covered" >      var len = parser[buffers[i]].length</span>
-<span class="cstat-no" title="statement not covered" >      if (len &gt; maxAllowed) {</span>
+  <span class="missing-if-branch" title="if path not taken">I</span>if (!Object.keys) {
+<span class="cstat-no" title="statement not covered">    Object.keys = <span class="fstat-no" title="function not covered">function (o) {</span></span>
+<span class="cstat-no" title="statement not covered">      var a = []</span>
+<span class="cstat-no" title="statement not covered">      for (var i in o) <span class="cstat-no" title="statement not covered">if (o.hasOwnProperty(i)) <span class="cstat-no" title="statement not covered">a.push(i)</span></span></span>
+<span class="cstat-no" title="statement not covered">      return a</span>
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered">  function checkBufferLength (parser) {</span>
+<span class="cstat-no" title="statement not covered">    var maxAllowed = Math.max(sax.MAX_BUFFER_LENGTH, 10)</span>
+<span class="cstat-no" title="statement not covered">    var maxActual = 0</span>
+<span class="cstat-no" title="statement not covered">    for (var i = 0, l = buffers.length; i &lt; l; i++) {</span>
+<span class="cstat-no" title="statement not covered">      var len = parser[buffers[i]].length</span>
+<span class="cstat-no" title="statement not covered">      if (len &gt; maxAllowed) {</span>
         // Text/cdata nodes can get big, and since they're buffered,
         // we can get here under normal conditions.
         // Avoid issues by emitting the text node now,
         // so at least it won't get any bigger.
-<span class="cstat-no" title="statement not covered" >        switch (buffers[i]) {</span>
+<span class="cstat-no" title="statement not covered">        switch (buffers[i]) {</span>
           case 'textNode':
-<span class="cstat-no" title="statement not covered" >            closeText(parser)</span>
-<span class="cstat-no" title="statement not covered" >            break</span>
+<span class="cstat-no" title="statement not covered">            closeText(parser)</span>
+<span class="cstat-no" title="statement not covered">            break</span>
 &nbsp;
           case 'cdata':
-<span class="cstat-no" title="statement not covered" >            emitNode(parser, 'oncdata', parser.cdata)</span>
-<span class="cstat-no" title="statement not covered" >            parser.cdata = ''</span>
-<span class="cstat-no" title="statement not covered" >            break</span>
+<span class="cstat-no" title="statement not covered">            emitNode(parser, 'oncdata', parser.cdata)</span>
+<span class="cstat-no" title="statement not covered">            parser.cdata = ''</span>
+<span class="cstat-no" title="statement not covered">            break</span>
 &nbsp;
           case 'script':
-<span class="cstat-no" title="statement not covered" >            emitNode(parser, 'onscript', parser.script)</span>
-<span class="cstat-no" title="statement not covered" >            parser.script = ''</span>
-<span class="cstat-no" title="statement not covered" >            break</span>
+<span class="cstat-no" title="statement not covered">            emitNode(parser, 'onscript', parser.script)</span>
+<span class="cstat-no" title="statement not covered">            parser.script = ''</span>
+<span class="cstat-no" title="statement not covered">            break</span>
 &nbsp;
           default:
-<span class="cstat-no" title="statement not covered" >            error(parser, 'Max buffer length exceeded: ' + buffers[i])</span>
+<span class="cstat-no" title="statement not covered">            error(parser, 'Max buffer length exceeded: ' + buffers[i])</span>
         }
       }
-<span class="cstat-no" title="statement not covered" >      maxActual = Math.max(maxActual, len)</span>
+<span class="cstat-no" title="statement not covered">      maxActual = Math.max(maxActual, len)</span>
     }
     // schedule the next check for the earliest possible buffer overrun.
-<span class="cstat-no" title="statement not covered" >    var m = sax.MAX_BUFFER_LENGTH - maxActual</span>
-<span class="cstat-no" title="statement not covered" >    parser.bufferCheckPosition = m + parser.position</span>
+<span class="cstat-no" title="statement not covered">    var m = sax.MAX_BUFFER_LENGTH - maxActual</span>
+<span class="cstat-no" title="statement not covered">    parser.bufferCheckPosition = m + parser.position</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function clearBuffers (parser) {</span>
-<span class="cstat-no" title="statement not covered" >    for (var i = 0, l = buffers.length; i &lt; l; i++) {</span>
-<span class="cstat-no" title="statement not covered" >      parser[buffers[i]] = ''</span>
+<span class="fstat-no" title="function not covered">  function clearBuffers (parser) {</span>
+<span class="cstat-no" title="statement not covered">    for (var i = 0, l = buffers.length; i &lt; l; i++) {</span>
+<span class="cstat-no" title="statement not covered">      parser[buffers[i]] = ''</span>
     }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function flushBuffers (parser) {</span>
-<span class="cstat-no" title="statement not covered" >    closeText(parser)</span>
-<span class="cstat-no" title="statement not covered" >    if (parser.cdata !== '') {</span>
-<span class="cstat-no" title="statement not covered" >      emitNode(parser, 'oncdata', parser.cdata)</span>
-<span class="cstat-no" title="statement not covered" >      parser.cdata = ''</span>
+<span class="fstat-no" title="function not covered">  function flushBuffers (parser) {</span>
+<span class="cstat-no" title="statement not covered">    closeText(parser)</span>
+<span class="cstat-no" title="statement not covered">    if (parser.cdata !== '') {</span>
+<span class="cstat-no" title="statement not covered">      emitNode(parser, 'oncdata', parser.cdata)</span>
+<span class="cstat-no" title="statement not covered">      parser.cdata = ''</span>
     }
-<span class="cstat-no" title="statement not covered" >    if (parser.script !== '') {</span>
-<span class="cstat-no" title="statement not covered" >      emitNode(parser, 'onscript', parser.script)</span>
-<span class="cstat-no" title="statement not covered" >      parser.script = ''</span>
+<span class="cstat-no" title="statement not covered">    if (parser.script !== '') {</span>
+<span class="cstat-no" title="statement not covered">      emitNode(parser, 'onscript', parser.script)</span>
+<span class="cstat-no" title="statement not covered">      parser.script = ''</span>
     }
   }
 &nbsp;
   SAXParser.prototype = {
-    end: <span class="fstat-no" title="function not covered" >function () {</span> <span class="cstat-no" title="statement not covered" >end(this) }</span>,
+    end: <span class="fstat-no" title="function not covered">function () {</span> <span class="cstat-no" title="statement not covered">end(this) }</span>,
     write: write,
-    resume: <span class="fstat-no" title="function not covered" >function () {</span> <span class="cstat-no" title="statement not covered" >this.error = null; <span class="cstat-no" title="statement not covered" ></span>return this }</span>,
-    close: <span class="fstat-no" title="function not covered" >function () {</span> <span class="cstat-no" title="statement not covered" >return this.write(null) }</span>,
-    flush: <span class="fstat-no" title="function not covered" >function () {</span> <span class="cstat-no" title="statement not covered" >flushBuffers(this) }</span>
+    resume: <span class="fstat-no" title="function not covered">function () {</span> <span class="cstat-no" title="statement not covered">this.error = null; <span class="cstat-no" title="statement not covered"></span>return this }</span>,
+    close: <span class="fstat-no" title="function not covered">function () {</span> <span class="cstat-no" title="statement not covered">return this.write(null) }</span>,
+    flush: <span class="fstat-no" title="function not covered">function () {</span> <span class="cstat-no" title="statement not covered">flushBuffers(this) }</span>
   }
 &nbsp;
   var Stream
   try {
     Stream = require('stream').Stream
   } catch (ex) {
-<span class="cstat-no" title="statement not covered" >    Stream = <span class="fstat-no" title="function not covered" >function () {</span>}</span>
+<span class="cstat-no" title="statement not covered">    Stream = <span class="fstat-no" title="function not covered">function () {</span>}</span>
   }
 &nbsp;
   var streamWraps = sax.EVENTS.filter(function (ev) {
     return ev !== 'error' &amp;&amp; ev !== 'end'
   })
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function createStream (strict, opt) {</span>
-<span class="cstat-no" title="statement not covered" >    return new SAXStream(strict, opt)</span>
+<span class="fstat-no" title="function not covered">  function createStream (strict, opt) {</span>
+<span class="cstat-no" title="statement not covered">    return new SAXStream(strict, opt)</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function SAXStream (strict, opt) {</span>
-<span class="cstat-no" title="statement not covered" >    if (!(this instanceof SAXStream)) {</span>
-<span class="cstat-no" title="statement not covered" >      return new SAXStream(strict, opt)</span>
+<span class="fstat-no" title="function not covered">  function SAXStream (strict, opt) {</span>
+<span class="cstat-no" title="statement not covered">    if (!(this instanceof SAXStream)) {</span>
+<span class="cstat-no" title="statement not covered">      return new SAXStream(strict, opt)</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    Stream.apply(this)</span>
+<span class="cstat-no" title="statement not covered">    Stream.apply(this)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    this._parser = new SAXParser(strict, opt)</span>
-<span class="cstat-no" title="statement not covered" >    this.writable = true</span>
-<span class="cstat-no" title="statement not covered" >    this.readable = true</span>
+<span class="cstat-no" title="statement not covered">    this._parser = new SAXParser(strict, opt)</span>
+<span class="cstat-no" title="statement not covered">    this.writable = true</span>
+<span class="cstat-no" title="statement not covered">    this.readable = true</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var me = this</span>
+<span class="cstat-no" title="statement not covered">    var me = this</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    this._parser.onend = <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >      me.emit('end')</span>
+<span class="cstat-no" title="statement not covered">    this._parser.onend = <span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">      me.emit('end')</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    this._parser.onerror = <span class="fstat-no" title="function not covered" >function (er) {</span></span>
-<span class="cstat-no" title="statement not covered" >      me.emit('error', er)</span>
+<span class="cstat-no" title="statement not covered">    this._parser.onerror = <span class="fstat-no" title="function not covered">function (er) {</span></span>
+<span class="cstat-no" title="statement not covered">      me.emit('error', er)</span>
 &nbsp;
       // if didn't throw, then means error was handled.
       // go ahead and clear error, so we can write again.
-<span class="cstat-no" title="statement not covered" >      me._parser.error = null</span>
+<span class="cstat-no" title="statement not covered">      me._parser.error = null</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    this._decoder = null</span>
+<span class="cstat-no" title="statement not covered">    this._decoder = null</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    streamWraps.forEach(<span class="fstat-no" title="function not covered" >function (ev) {</span></span>
-<span class="cstat-no" title="statement not covered" >      Object.defineProperty(me, 'on' + ev, {</span>
-        get: <span class="fstat-no" title="function not covered" >function () {</span>
-<span class="cstat-no" title="statement not covered" >          return me._parser['on' + ev]</span>
+<span class="cstat-no" title="statement not covered">    streamWraps.forEach(<span class="fstat-no" title="function not covered">function (ev) {</span></span>
+<span class="cstat-no" title="statement not covered">      Object.defineProperty(me, 'on' + ev, {</span>
+        get: <span class="fstat-no" title="function not covered">function () {</span>
+<span class="cstat-no" title="statement not covered">          return me._parser['on' + ev]</span>
         },
-        set: <span class="fstat-no" title="function not covered" >function (h) {</span>
-<span class="cstat-no" title="statement not covered" >          if (!h) {</span>
-<span class="cstat-no" title="statement not covered" >            me.removeAllListeners(ev)</span>
-<span class="cstat-no" title="statement not covered" >            me._parser['on' + ev] = h</span>
-<span class="cstat-no" title="statement not covered" >            return h</span>
+        set: <span class="fstat-no" title="function not covered">function (h) {</span>
+<span class="cstat-no" title="statement not covered">          if (!h) {</span>
+<span class="cstat-no" title="statement not covered">            me.removeAllListeners(ev)</span>
+<span class="cstat-no" title="statement not covered">            me._parser['on' + ev] = h</span>
+<span class="cstat-no" title="statement not covered">            return h</span>
           }
-<span class="cstat-no" title="statement not covered" >          me.on(ev, h)</span>
+<span class="cstat-no" title="statement not covered">          me.on(ev, h)</span>
         },
         enumerable: true,
         configurable: false
@@ -3605,41 +3603,41 @@
     }
   })
 &nbsp;
-  SAXStream.prototype.write = <span class="fstat-no" title="function not covered" >function (data) {</span>
-<span class="cstat-no" title="statement not covered" >    if (typeof Buffer === 'function' &amp;&amp;</span>
+  SAXStream.prototype.write = <span class="fstat-no" title="function not covered">function (data) {</span>
+<span class="cstat-no" title="statement not covered">    if (typeof Buffer === 'function' &amp;&amp;</span>
       typeof Buffer.isBuffer === 'function' &amp;&amp;
       Buffer.isBuffer(data)) {
-<span class="cstat-no" title="statement not covered" >      if (!this._decoder) {</span>
-<span class="cstat-no" title="statement not covered" >        var SD = require('string_decoder').StringDecoder</span>
-<span class="cstat-no" title="statement not covered" >        this._decoder = new SD('utf8')</span>
+<span class="cstat-no" title="statement not covered">      if (!this._decoder) {</span>
+<span class="cstat-no" title="statement not covered">        var SD = require('string_decoder').StringDecoder</span>
+<span class="cstat-no" title="statement not covered">        this._decoder = new SD('utf8')</span>
       }
-<span class="cstat-no" title="statement not covered" >      data = this._decoder.write(data)</span>
+<span class="cstat-no" title="statement not covered">      data = this._decoder.write(data)</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    this._parser.write(data.toString())</span>
-<span class="cstat-no" title="statement not covered" >    this.emit('data', data)</span>
-<span class="cstat-no" title="statement not covered" >    return true</span>
+<span class="cstat-no" title="statement not covered">    this._parser.write(data.toString())</span>
+<span class="cstat-no" title="statement not covered">    this.emit('data', data)</span>
+<span class="cstat-no" title="statement not covered">    return true</span>
   }
 &nbsp;
-  SAXStream.prototype.end = <span class="fstat-no" title="function not covered" >function (chunk) {</span>
-<span class="cstat-no" title="statement not covered" >    if (chunk &amp;&amp; chunk.length) {</span>
-<span class="cstat-no" title="statement not covered" >      this.write(chunk)</span>
+  SAXStream.prototype.end = <span class="fstat-no" title="function not covered">function (chunk) {</span>
+<span class="cstat-no" title="statement not covered">    if (chunk &amp;&amp; chunk.length) {</span>
+<span class="cstat-no" title="statement not covered">      this.write(chunk)</span>
     }
-<span class="cstat-no" title="statement not covered" >    this._parser.end()</span>
-<span class="cstat-no" title="statement not covered" >    return true</span>
+<span class="cstat-no" title="statement not covered">    this._parser.end()</span>
+<span class="cstat-no" title="statement not covered">    return true</span>
   }
 &nbsp;
-  SAXStream.prototype.on = <span class="fstat-no" title="function not covered" >function (ev, handler) {</span>
-<span class="cstat-no" title="statement not covered" >    var me = this</span>
-<span class="cstat-no" title="statement not covered" >    if (!me._parser['on' + ev] &amp;&amp; streamWraps.indexOf(ev) !== -1) {</span>
-<span class="cstat-no" title="statement not covered" >      me._parser['on' + ev] = <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >        var args = arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments)</span>
-<span class="cstat-no" title="statement not covered" >        args.splice(0, 0, ev)</span>
-<span class="cstat-no" title="statement not covered" >        me.emit.apply(me, args)</span>
+  SAXStream.prototype.on = <span class="fstat-no" title="function not covered">function (ev, handler) {</span>
+<span class="cstat-no" title="statement not covered">    var me = this</span>
+<span class="cstat-no" title="statement not covered">    if (!me._parser['on' + ev] &amp;&amp; streamWraps.indexOf(ev) !== -1) {</span>
+<span class="cstat-no" title="statement not covered">      me._parser['on' + ev] = <span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">        var args = arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments)</span>
+<span class="cstat-no" title="statement not covered">        args.splice(0, 0, ev)</span>
+<span class="cstat-no" title="statement not covered">        me.emit.apply(me, args)</span>
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return Stream.prototype.on.call(me, ev, handler)</span>
+<span class="cstat-no" title="statement not covered">    return Stream.prototype.on.call(me, ev, handler)</span>
   }
 &nbsp;
   // character classes and tokens
@@ -3683,20 +3681,20 @@
     }, {})
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function isMatch (regex, c) {</span>
-<span class="cstat-no" title="statement not covered" >    return regex.test(c)</span>
+<span class="fstat-no" title="function not covered">  function isMatch (regex, c) {</span>
+<span class="cstat-no" title="statement not covered">    return regex.test(c)</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function is (charclass, c) {</span>
-<span class="cstat-no" title="statement not covered" >    return charclass[c]</span>
+<span class="fstat-no" title="function not covered">  function is (charclass, c) {</span>
+<span class="cstat-no" title="statement not covered">    return charclass[c]</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function notMatch (regex, c) {</span>
-<span class="cstat-no" title="statement not covered" >    return !isMatch(regex, c)</span>
+<span class="fstat-no" title="function not covered">  function notMatch (regex, c) {</span>
+<span class="cstat-no" title="statement not covered">    return !isMatch(regex, c)</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function not (charclass, c) {</span>
-<span class="cstat-no" title="statement not covered" >    return !is(charclass, c)</span>
+<span class="fstat-no" title="function not covered">  function not (charclass, c) {</span>
+<span class="cstat-no" title="statement not covered">    return !is(charclass, c)</span>
   }
 &nbsp;
   var S = 0
@@ -4016,165 +4014,165 @@
   // shorthand
   S = sax.STATE
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function emit (parser, event, data) {</span>
-<span class="cstat-no" title="statement not covered" >    parser[event] &amp;&amp; parser[event](data)</span>
+<span class="fstat-no" title="function not covered">  function emit (parser, event, data) {</span>
+<span class="cstat-no" title="statement not covered">    parser[event] &amp;&amp; parser[event](data)</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function emitNode (parser, nodeType, data) {</span>
-<span class="cstat-no" title="statement not covered" >    if (parser.textNode) <span class="cstat-no" title="statement not covered" >closeText(parser)</span></span>
-<span class="cstat-no" title="statement not covered" >    emit(parser, nodeType, data)</span>
+<span class="fstat-no" title="function not covered">  function emitNode (parser, nodeType, data) {</span>
+<span class="cstat-no" title="statement not covered">    if (parser.textNode) <span class="cstat-no" title="statement not covered">closeText(parser)</span></span>
+<span class="cstat-no" title="statement not covered">    emit(parser, nodeType, data)</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function closeText (parser) {</span>
-<span class="cstat-no" title="statement not covered" >    parser.textNode = textopts(parser.opt, parser.textNode)</span>
-<span class="cstat-no" title="statement not covered" >    if (parser.textNode) <span class="cstat-no" title="statement not covered" >emit(parser, 'ontext', parser.textNode)</span></span>
-<span class="cstat-no" title="statement not covered" >    parser.textNode = ''</span>
+<span class="fstat-no" title="function not covered">  function closeText (parser) {</span>
+<span class="cstat-no" title="statement not covered">    parser.textNode = textopts(parser.opt, parser.textNode)</span>
+<span class="cstat-no" title="statement not covered">    if (parser.textNode) <span class="cstat-no" title="statement not covered">emit(parser, 'ontext', parser.textNode)</span></span>
+<span class="cstat-no" title="statement not covered">    parser.textNode = ''</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function textopts (opt, text) {</span>
-<span class="cstat-no" title="statement not covered" >    if (opt.trim) <span class="cstat-no" title="statement not covered" >text = text.trim()</span></span>
-<span class="cstat-no" title="statement not covered" >    if (opt.normalize) <span class="cstat-no" title="statement not covered" >text = text.replace(/\s+/g, ' ')</span></span>
-<span class="cstat-no" title="statement not covered" >    return text</span>
+<span class="fstat-no" title="function not covered">  function textopts (opt, text) {</span>
+<span class="cstat-no" title="statement not covered">    if (opt.trim) <span class="cstat-no" title="statement not covered">text = text.trim()</span></span>
+<span class="cstat-no" title="statement not covered">    if (opt.normalize) <span class="cstat-no" title="statement not covered">text = text.replace(/\s+/g, ' ')</span></span>
+<span class="cstat-no" title="statement not covered">    return text</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function error (parser, er) {</span>
-<span class="cstat-no" title="statement not covered" >    closeText(parser)</span>
-<span class="cstat-no" title="statement not covered" >    if (parser.trackPosition) {</span>
-<span class="cstat-no" title="statement not covered" >      er += '\nLine: ' + parser.line +</span>
+<span class="fstat-no" title="function not covered">  function error (parser, er) {</span>
+<span class="cstat-no" title="statement not covered">    closeText(parser)</span>
+<span class="cstat-no" title="statement not covered">    if (parser.trackPosition) {</span>
+<span class="cstat-no" title="statement not covered">      er += '\nLine: ' + parser.line +</span>
         '\nColumn: ' + parser.column +
         '\nChar: ' + parser.c
     }
-<span class="cstat-no" title="statement not covered" >    er = new Error(er)</span>
-<span class="cstat-no" title="statement not covered" >    parser.error = er</span>
-<span class="cstat-no" title="statement not covered" >    emit(parser, 'onerror', er)</span>
-<span class="cstat-no" title="statement not covered" >    return parser</span>
+<span class="cstat-no" title="statement not covered">    er = new Error(er)</span>
+<span class="cstat-no" title="statement not covered">    parser.error = er</span>
+<span class="cstat-no" title="statement not covered">    emit(parser, 'onerror', er)</span>
+<span class="cstat-no" title="statement not covered">    return parser</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function end (parser) {</span>
-<span class="cstat-no" title="statement not covered" >    if (parser.sawRoot &amp;&amp; !parser.closedRoot) <span class="cstat-no" title="statement not covered" >strictFail(parser, 'Unclosed root tag')</span></span>
-<span class="cstat-no" title="statement not covered" >    if ((parser.state !== S.BEGIN) &amp;&amp;</span>
+<span class="fstat-no" title="function not covered">  function end (parser) {</span>
+<span class="cstat-no" title="statement not covered">    if (parser.sawRoot &amp;&amp; !parser.closedRoot) <span class="cstat-no" title="statement not covered">strictFail(parser, 'Unclosed root tag')</span></span>
+<span class="cstat-no" title="statement not covered">    if ((parser.state !== S.BEGIN) &amp;&amp;</span>
       (parser.state !== S.BEGIN_WHITESPACE) &amp;&amp;
       (parser.state !== S.TEXT)) {
-<span class="cstat-no" title="statement not covered" >      error(parser, 'Unexpected end')</span>
+<span class="cstat-no" title="statement not covered">      error(parser, 'Unexpected end')</span>
     }
-<span class="cstat-no" title="statement not covered" >    closeText(parser)</span>
-<span class="cstat-no" title="statement not covered" >    parser.c = ''</span>
-<span class="cstat-no" title="statement not covered" >    parser.closed = true</span>
-<span class="cstat-no" title="statement not covered" >    emit(parser, 'onend')</span>
-<span class="cstat-no" title="statement not covered" >    SAXParser.call(parser, parser.strict, parser.opt)</span>
-<span class="cstat-no" title="statement not covered" >    return parser</span>
+<span class="cstat-no" title="statement not covered">    closeText(parser)</span>
+<span class="cstat-no" title="statement not covered">    parser.c = ''</span>
+<span class="cstat-no" title="statement not covered">    parser.closed = true</span>
+<span class="cstat-no" title="statement not covered">    emit(parser, 'onend')</span>
+<span class="cstat-no" title="statement not covered">    SAXParser.call(parser, parser.strict, parser.opt)</span>
+<span class="cstat-no" title="statement not covered">    return parser</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function strictFail (parser, message) {</span>
-<span class="cstat-no" title="statement not covered" >    if (typeof parser !== 'object' || !(parser instanceof SAXParser)) {</span>
-<span class="cstat-no" title="statement not covered" >      throw new Error('bad call to strictFail')</span>
+<span class="fstat-no" title="function not covered">  function strictFail (parser, message) {</span>
+<span class="cstat-no" title="statement not covered">    if (typeof parser !== 'object' || !(parser instanceof SAXParser)) {</span>
+<span class="cstat-no" title="statement not covered">      throw new Error('bad call to strictFail')</span>
     }
-<span class="cstat-no" title="statement not covered" >    if (parser.strict) {</span>
-<span class="cstat-no" title="statement not covered" >      error(parser, message)</span>
+<span class="cstat-no" title="statement not covered">    if (parser.strict) {</span>
+<span class="cstat-no" title="statement not covered">      error(parser, message)</span>
     }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function newTag (parser) {</span>
-<span class="cstat-no" title="statement not covered" >    if (!parser.strict) <span class="cstat-no" title="statement not covered" >parser.tagName = parser.tagName[parser.looseCase]()</span></span>
-<span class="cstat-no" title="statement not covered" >    var parent = parser.tags[parser.tags.length - 1] || parser</span>
-<span class="cstat-no" title="statement not covered" >    var tag = parser.tag = { name: parser.tagName, attributes: {} }</span>
+<span class="fstat-no" title="function not covered">  function newTag (parser) {</span>
+<span class="cstat-no" title="statement not covered">    if (!parser.strict) <span class="cstat-no" title="statement not covered">parser.tagName = parser.tagName[parser.looseCase]()</span></span>
+<span class="cstat-no" title="statement not covered">    var parent = parser.tags[parser.tags.length - 1] || parser</span>
+<span class="cstat-no" title="statement not covered">    var tag = parser.tag = { name: parser.tagName, attributes: {} }</span>
 &nbsp;
     // will be overridden if tag contails an xmlns="foo" or xmlns:foo="bar"
-<span class="cstat-no" title="statement not covered" >    if (parser.opt.xmlns) {</span>
-<span class="cstat-no" title="statement not covered" >      tag.ns = parent.ns</span>
+<span class="cstat-no" title="statement not covered">    if (parser.opt.xmlns) {</span>
+<span class="cstat-no" title="statement not covered">      tag.ns = parent.ns</span>
     }
-<span class="cstat-no" title="statement not covered" >    parser.attribList.length = 0</span>
-<span class="cstat-no" title="statement not covered" >    emitNode(parser, 'onopentagstart', tag)</span>
+<span class="cstat-no" title="statement not covered">    parser.attribList.length = 0</span>
+<span class="cstat-no" title="statement not covered">    emitNode(parser, 'onopentagstart', tag)</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function qname (name, attribute) {</span>
-<span class="cstat-no" title="statement not covered" >    var i = name.indexOf(':')</span>
-<span class="cstat-no" title="statement not covered" >    var qualName = i &lt; 0 ? [ '', name ] : name.split(':')</span>
-<span class="cstat-no" title="statement not covered" >    var prefix = qualName[0]</span>
-<span class="cstat-no" title="statement not covered" >    var local = qualName[1]</span>
+<span class="fstat-no" title="function not covered">  function qname (name, attribute) {</span>
+<span class="cstat-no" title="statement not covered">    var i = name.indexOf(':')</span>
+<span class="cstat-no" title="statement not covered">    var qualName = i &lt; 0 ? [ '', name ] : name.split(':')</span>
+<span class="cstat-no" title="statement not covered">    var prefix = qualName[0]</span>
+<span class="cstat-no" title="statement not covered">    var local = qualName[1]</span>
 &nbsp;
     // &lt;x "xmlns"="http://foo"&gt;
-<span class="cstat-no" title="statement not covered" >    if (attribute &amp;&amp; name === 'xmlns') {</span>
-<span class="cstat-no" title="statement not covered" >      prefix = 'xmlns'</span>
-<span class="cstat-no" title="statement not covered" >      local = ''</span>
+<span class="cstat-no" title="statement not covered">    if (attribute &amp;&amp; name === 'xmlns') {</span>
+<span class="cstat-no" title="statement not covered">      prefix = 'xmlns'</span>
+<span class="cstat-no" title="statement not covered">      local = ''</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return { prefix: prefix, local: local }</span>
+<span class="cstat-no" title="statement not covered">    return { prefix: prefix, local: local }</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function attrib (parser) {</span>
-<span class="cstat-no" title="statement not covered" >    if (!parser.strict) {</span>
-<span class="cstat-no" title="statement not covered" >      parser.attribName = parser.attribName[parser.looseCase]()</span>
+<span class="fstat-no" title="function not covered">  function attrib (parser) {</span>
+<span class="cstat-no" title="statement not covered">    if (!parser.strict) {</span>
+<span class="cstat-no" title="statement not covered">      parser.attribName = parser.attribName[parser.looseCase]()</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (parser.attribList.indexOf(parser.attribName) !== -1 ||</span>
+<span class="cstat-no" title="statement not covered">    if (parser.attribList.indexOf(parser.attribName) !== -1 ||</span>
       parser.tag.attributes.hasOwnProperty(parser.attribName)) {
-<span class="cstat-no" title="statement not covered" >      parser.attribName = parser.attribValue = ''</span>
-<span class="cstat-no" title="statement not covered" >      return</span>
+<span class="cstat-no" title="statement not covered">      parser.attribName = parser.attribValue = ''</span>
+<span class="cstat-no" title="statement not covered">      return</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (parser.opt.xmlns) {</span>
-<span class="cstat-no" title="statement not covered" >      var qn = qname(parser.attribName, true)</span>
-<span class="cstat-no" title="statement not covered" >      var prefix = qn.prefix</span>
-<span class="cstat-no" title="statement not covered" >      var local = qn.local</span>
+<span class="cstat-no" title="statement not covered">    if (parser.opt.xmlns) {</span>
+<span class="cstat-no" title="statement not covered">      var qn = qname(parser.attribName, true)</span>
+<span class="cstat-no" title="statement not covered">      var prefix = qn.prefix</span>
+<span class="cstat-no" title="statement not covered">      var local = qn.local</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      if (prefix === 'xmlns') {</span>
+<span class="cstat-no" title="statement not covered">      if (prefix === 'xmlns') {</span>
         // namespace binding attribute. push the binding into scope
-<span class="cstat-no" title="statement not covered" >        if (local === 'xml' &amp;&amp; parser.attribValue !== XML_NAMESPACE) {</span>
-<span class="cstat-no" title="statement not covered" >          strictFail(parser,</span>
+<span class="cstat-no" title="statement not covered">        if (local === 'xml' &amp;&amp; parser.attribValue !== XML_NAMESPACE) {</span>
+<span class="cstat-no" title="statement not covered">          strictFail(parser,</span>
             'xml: prefix must be bound to ' + XML_NAMESPACE + '\n' +
             'Actual: ' + parser.attribValue)
-        } else <span class="cstat-no" title="statement not covered" >if (local === 'xmlns' &amp;&amp; parser.attribValue !== XMLNS_NAMESPACE) {</span>
-<span class="cstat-no" title="statement not covered" >          strictFail(parser,</span>
+        } else <span class="cstat-no" title="statement not covered">if (local === 'xmlns' &amp;&amp; parser.attribValue !== XMLNS_NAMESPACE) {</span>
+<span class="cstat-no" title="statement not covered">          strictFail(parser,</span>
             'xmlns: prefix must be bound to ' + XMLNS_NAMESPACE + '\n' +
             'Actual: ' + parser.attribValue)
         } else {
-<span class="cstat-no" title="statement not covered" >          var tag = parser.tag</span>
-<span class="cstat-no" title="statement not covered" >          var parent = parser.tags[parser.tags.length - 1] || parser</span>
-<span class="cstat-no" title="statement not covered" >          if (tag.ns === parent.ns) {</span>
-<span class="cstat-no" title="statement not covered" >            tag.ns = Object.create(parent.ns)</span>
+<span class="cstat-no" title="statement not covered">          var tag = parser.tag</span>
+<span class="cstat-no" title="statement not covered">          var parent = parser.tags[parser.tags.length - 1] || parser</span>
+<span class="cstat-no" title="statement not covered">          if (tag.ns === parent.ns) {</span>
+<span class="cstat-no" title="statement not covered">            tag.ns = Object.create(parent.ns)</span>
           }
-<span class="cstat-no" title="statement not covered" >          tag.ns[local] = parser.attribValue</span>
+<span class="cstat-no" title="statement not covered">          tag.ns[local] = parser.attribValue</span>
         }
       }
 &nbsp;
       // defer onattribute events until all attributes have been seen
       // so any new bindings can take effect. preserve attribute order
       // so deferred events can be emitted in document order
-<span class="cstat-no" title="statement not covered" >      parser.attribList.push([parser.attribName, parser.attribValue])</span>
+<span class="cstat-no" title="statement not covered">      parser.attribList.push([parser.attribName, parser.attribValue])</span>
     } else {
       // in non-xmlns mode, we can emit the event right away
-<span class="cstat-no" title="statement not covered" >      parser.tag.attributes[parser.attribName] = parser.attribValue</span>
-<span class="cstat-no" title="statement not covered" >      emitNode(parser, 'onattribute', {</span>
+<span class="cstat-no" title="statement not covered">      parser.tag.attributes[parser.attribName] = parser.attribValue</span>
+<span class="cstat-no" title="statement not covered">      emitNode(parser, 'onattribute', {</span>
         name: parser.attribName,
         value: parser.attribValue
       })
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    parser.attribName = parser.attribValue = ''</span>
+<span class="cstat-no" title="statement not covered">    parser.attribName = parser.attribValue = ''</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function openTag (parser, selfClosing) {</span>
-<span class="cstat-no" title="statement not covered" >    if (parser.opt.xmlns) {</span>
+<span class="fstat-no" title="function not covered">  function openTag (parser, selfClosing) {</span>
+<span class="cstat-no" title="statement not covered">    if (parser.opt.xmlns) {</span>
       // emit namespace binding events
-<span class="cstat-no" title="statement not covered" >      var tag = parser.tag</span>
+<span class="cstat-no" title="statement not covered">      var tag = parser.tag</span>
 &nbsp;
       // add namespace info to tag
-<span class="cstat-no" title="statement not covered" >      var qn = qname(parser.tagName)</span>
-<span class="cstat-no" title="statement not covered" >      tag.prefix = qn.prefix</span>
-<span class="cstat-no" title="statement not covered" >      tag.local = qn.local</span>
-<span class="cstat-no" title="statement not covered" >      tag.uri = tag.ns[qn.prefix] || ''</span>
+<span class="cstat-no" title="statement not covered">      var qn = qname(parser.tagName)</span>
+<span class="cstat-no" title="statement not covered">      tag.prefix = qn.prefix</span>
+<span class="cstat-no" title="statement not covered">      tag.local = qn.local</span>
+<span class="cstat-no" title="statement not covered">      tag.uri = tag.ns[qn.prefix] || ''</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      if (tag.prefix &amp;&amp; !tag.uri) {</span>
-<span class="cstat-no" title="statement not covered" >        strictFail(parser, 'Unbound namespace prefix: ' +</span>
+<span class="cstat-no" title="statement not covered">      if (tag.prefix &amp;&amp; !tag.uri) {</span>
+<span class="cstat-no" title="statement not covered">        strictFail(parser, 'Unbound namespace prefix: ' +</span>
           JSON.stringify(parser.tagName))
-<span class="cstat-no" title="statement not covered" >        tag.uri = qn.prefix</span>
+<span class="cstat-no" title="statement not covered">        tag.uri = qn.prefix</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      var parent = parser.tags[parser.tags.length - 1] || parser</span>
-<span class="cstat-no" title="statement not covered" >      if (tag.ns &amp;&amp; parent.ns !== tag.ns) {</span>
-<span class="cstat-no" title="statement not covered" >        Object.keys(tag.ns).forEach(<span class="fstat-no" title="function not covered" >function (p) {</span></span>
-<span class="cstat-no" title="statement not covered" >          emitNode(parser, 'onopennamespace', {</span>
+<span class="cstat-no" title="statement not covered">      var parent = parser.tags[parser.tags.length - 1] || parser</span>
+<span class="cstat-no" title="statement not covered">      if (tag.ns &amp;&amp; parent.ns !== tag.ns) {</span>
+<span class="cstat-no" title="statement not covered">        Object.keys(tag.ns).forEach(<span class="fstat-no" title="function not covered">function (p) {</span></span>
+<span class="cstat-no" title="statement not covered">          emitNode(parser, 'onopennamespace', {</span>
             prefix: p,
             uri: tag.ns[p]
           })
@@ -4184,15 +4182,15 @@
       // handle deferred onattribute events
       // Note: do not apply default ns to attributes:
       //   http://www.w3.org/TR/REC-xml-names/#defaulting
-<span class="cstat-no" title="statement not covered" >      for (var i = 0, l = parser.attribList.length; i &lt; l; i++) {</span>
-<span class="cstat-no" title="statement not covered" >        var nv = parser.attribList[i]</span>
-<span class="cstat-no" title="statement not covered" >        var name = nv[0]</span>
-<span class="cstat-no" title="statement not covered" >        var value = nv[1]</span>
-<span class="cstat-no" title="statement not covered" >        var qualName = qname(name, true)</span>
-<span class="cstat-no" title="statement not covered" >        var prefix = qualName.prefix</span>
-<span class="cstat-no" title="statement not covered" >        var local = qualName.local</span>
-<span class="cstat-no" title="statement not covered" >        var uri = prefix === '' ? '' : (tag.ns[prefix] || '')</span>
-<span class="cstat-no" title="statement not covered" >        var a = {</span>
+<span class="cstat-no" title="statement not covered">      for (var i = 0, l = parser.attribList.length; i &lt; l; i++) {</span>
+<span class="cstat-no" title="statement not covered">        var nv = parser.attribList[i]</span>
+<span class="cstat-no" title="statement not covered">        var name = nv[0]</span>
+<span class="cstat-no" title="statement not covered">        var value = nv[1]</span>
+<span class="cstat-no" title="statement not covered">        var qualName = qname(name, true)</span>
+<span class="cstat-no" title="statement not covered">        var prefix = qualName.prefix</span>
+<span class="cstat-no" title="statement not covered">        var local = qualName.local</span>
+<span class="cstat-no" title="statement not covered">        var uri = prefix === '' ? '' : (tag.ns[prefix] || '')</span>
+<span class="cstat-no" title="statement not covered">        var a = {</span>
           name: name,
           value: value,
           prefix: prefix,
@@ -4202,769 +4200,770 @@
 &nbsp;
         // if there's any attributes with an undefined namespace,
         // then fail on them now.
-<span class="cstat-no" title="statement not covered" >        if (prefix &amp;&amp; prefix !== 'xmlns' &amp;&amp; !uri) {</span>
-<span class="cstat-no" title="statement not covered" >          strictFail(parser, 'Unbound namespace prefix: ' +</span>
+<span class="cstat-no" title="statement not covered">        if (prefix &amp;&amp; prefix !== 'xmlns' &amp;&amp; !uri) {</span>
+<span class="cstat-no" title="statement not covered">          strictFail(parser, 'Unbound namespace prefix: ' +</span>
             JSON.stringify(prefix))
-<span class="cstat-no" title="statement not covered" >          a.uri = prefix</span>
+<span class="cstat-no" title="statement not covered">          a.uri = prefix</span>
         }
-<span class="cstat-no" title="statement not covered" >        parser.tag.attributes[name] = a</span>
-<span class="cstat-no" title="statement not covered" >        emitNode(parser, 'onattribute', a)</span>
+<span class="cstat-no" title="statement not covered">        parser.tag.attributes[name] = a</span>
+<span class="cstat-no" title="statement not covered">        emitNode(parser, 'onattribute', a)</span>
       }
-<span class="cstat-no" title="statement not covered" >      parser.attribList.length = 0</span>
+<span class="cstat-no" title="statement not covered">      parser.attribList.length = 0</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    parser.tag.isSelfClosing = !!selfClosing</span>
+<span class="cstat-no" title="statement not covered">    parser.tag.isSelfClosing = !!selfClosing</span>
 &nbsp;
     // process the tag
-<span class="cstat-no" title="statement not covered" >    parser.sawRoot = true</span>
-<span class="cstat-no" title="statement not covered" >    parser.tags.push(parser.tag)</span>
-<span class="cstat-no" title="statement not covered" >    emitNode(parser, 'onopentag', parser.tag)</span>
-<span class="cstat-no" title="statement not covered" >    if (!selfClosing) {</span>
+<span class="cstat-no" title="statement not covered">    parser.sawRoot = true</span>
+<span class="cstat-no" title="statement not covered">    parser.tags.push(parser.tag)</span>
+<span class="cstat-no" title="statement not covered">    emitNode(parser, 'onopentag', parser.tag)</span>
+<span class="cstat-no" title="statement not covered">    if (!selfClosing) {</span>
       // special case for &lt;script&gt; in non-strict mode.
-<span class="cstat-no" title="statement not covered" >      if (!parser.noscript &amp;&amp; parser.tagName.toLowerCase() === 'script') {</span>
-<span class="cstat-no" title="statement not covered" >        parser.state = S.SCRIPT</span>
+<span class="cstat-no" title="statement not covered">      if (!parser.noscript &amp;&amp; parser.tagName.toLowerCase() === 'script') {</span>
+<span class="cstat-no" title="statement not covered">        parser.state = S.SCRIPT</span>
       } else {
-<span class="cstat-no" title="statement not covered" >        parser.state = S.TEXT</span>
+<span class="cstat-no" title="statement not covered">        parser.state = S.TEXT</span>
       }
-<span class="cstat-no" title="statement not covered" >      parser.tag = null</span>
-<span class="cstat-no" title="statement not covered" >      parser.tagName = ''</span>
+<span class="cstat-no" title="statement not covered">      parser.tag = null</span>
+<span class="cstat-no" title="statement not covered">      parser.tagName = ''</span>
     }
-<span class="cstat-no" title="statement not covered" >    parser.attribName = parser.attribValue = ''</span>
-<span class="cstat-no" title="statement not covered" >    parser.attribList.length = 0</span>
+<span class="cstat-no" title="statement not covered">    parser.attribName = parser.attribValue = ''</span>
+<span class="cstat-no" title="statement not covered">    parser.attribList.length = 0</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function closeTag (parser) {</span>
-<span class="cstat-no" title="statement not covered" >    if (!parser.tagName) {</span>
-<span class="cstat-no" title="statement not covered" >      strictFail(parser, 'Weird empty close tag.')</span>
-<span class="cstat-no" title="statement not covered" >      parser.textNode += '&lt;/&gt;'</span>
-<span class="cstat-no" title="statement not covered" >      parser.state = S.TEXT</span>
-<span class="cstat-no" title="statement not covered" >      return</span>
+<span class="fstat-no" title="function not covered">  function closeTag (parser) {</span>
+<span class="cstat-no" title="statement not covered">    if (!parser.tagName) {</span>
+<span class="cstat-no" title="statement not covered">      strictFail(parser, 'Weird empty close tag.')</span>
+<span class="cstat-no" title="statement not covered">      parser.textNode += '&lt;/&gt;'</span>
+<span class="cstat-no" title="statement not covered">      parser.state = S.TEXT</span>
+<span class="cstat-no" title="statement not covered">      return</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (parser.script) {</span>
-<span class="cstat-no" title="statement not covered" >      if (parser.tagName !== 'script') {</span>
-<span class="cstat-no" title="statement not covered" >        parser.script += '&lt;/' + parser.tagName + '&gt;'</span>
-<span class="cstat-no" title="statement not covered" >        parser.tagName = ''</span>
-<span class="cstat-no" title="statement not covered" >        parser.state = S.SCRIPT</span>
-<span class="cstat-no" title="statement not covered" >        return</span>
+<span class="cstat-no" title="statement not covered">    if (parser.script) {</span>
+<span class="cstat-no" title="statement not covered">      if (parser.tagName !== 'script') {</span>
+<span class="cstat-no" title="statement not covered">        parser.script += '&lt;/' + parser.tagName + '&gt;'</span>
+<span class="cstat-no" title="statement not covered">        parser.tagName = ''</span>
+<span class="cstat-no" title="statement not covered">        parser.state = S.SCRIPT</span>
+<span class="cstat-no" title="statement not covered">        return</span>
       }
-<span class="cstat-no" title="statement not covered" >      emitNode(parser, 'onscript', parser.script)</span>
-<span class="cstat-no" title="statement not covered" >      parser.script = ''</span>
+<span class="cstat-no" title="statement not covered">      emitNode(parser, 'onscript', parser.script)</span>
+<span class="cstat-no" title="statement not covered">      parser.script = ''</span>
     }
 &nbsp;
     // first make sure that the closing tag actually exists.
     // &lt;a&gt;&lt;b&gt;&lt;/c&gt;&lt;/b&gt;&lt;/a&gt; will close everything, otherwise.
-<span class="cstat-no" title="statement not covered" >    var t = parser.tags.length</span>
-<span class="cstat-no" title="statement not covered" >    var tagName = parser.tagName</span>
-<span class="cstat-no" title="statement not covered" >    if (!parser.strict) {</span>
-<span class="cstat-no" title="statement not covered" >      tagName = tagName[parser.looseCase]()</span>
+<span class="cstat-no" title="statement not covered">    var t = parser.tags.length</span>
+<span class="cstat-no" title="statement not covered">    var tagName = parser.tagName</span>
+<span class="cstat-no" title="statement not covered">    if (!parser.strict) {</span>
+<span class="cstat-no" title="statement not covered">      tagName = tagName[parser.looseCase]()</span>
     }
-<span class="cstat-no" title="statement not covered" >    var closeTo = tagName</span>
-<span class="cstat-no" title="statement not covered" >    while (t--) {</span>
-<span class="cstat-no" title="statement not covered" >      var close = parser.tags[t]</span>
-<span class="cstat-no" title="statement not covered" >      if (close.name !== closeTo) {</span>
+<span class="cstat-no" title="statement not covered">    var closeTo = tagName</span>
+<span class="cstat-no" title="statement not covered">    while (t--) {</span>
+<span class="cstat-no" title="statement not covered">      var close = parser.tags[t]</span>
+<span class="cstat-no" title="statement not covered">      if (close.name !== closeTo) {</span>
         // fail the first time in strict mode
-<span class="cstat-no" title="statement not covered" >        strictFail(parser, 'Unexpected close tag')</span>
+<span class="cstat-no" title="statement not covered">        strictFail(parser, 'Unexpected close tag')</span>
       } else {
-<span class="cstat-no" title="statement not covered" >        break</span>
+<span class="cstat-no" title="statement not covered">        break</span>
       }
     }
 &nbsp;
     // didn't find it.  we already failed for strict, so just abort.
-<span class="cstat-no" title="statement not covered" >    if (t &lt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >      strictFail(parser, 'Unmatched closing tag: ' + parser.tagName)</span>
-<span class="cstat-no" title="statement not covered" >      parser.textNode += '&lt;/' + parser.tagName + '&gt;'</span>
-<span class="cstat-no" title="statement not covered" >      parser.state = S.TEXT</span>
-<span class="cstat-no" title="statement not covered" >      return</span>
+<span class="cstat-no" title="statement not covered">    if (t &lt; 0) {</span>
+<span class="cstat-no" title="statement not covered">      strictFail(parser, 'Unmatched closing tag: ' + parser.tagName)</span>
+<span class="cstat-no" title="statement not covered">      parser.textNode += '&lt;/' + parser.tagName + '&gt;'</span>
+<span class="cstat-no" title="statement not covered">      parser.state = S.TEXT</span>
+<span class="cstat-no" title="statement not covered">      return</span>
     }
-<span class="cstat-no" title="statement not covered" >    parser.tagName = tagName</span>
-<span class="cstat-no" title="statement not covered" >    var s = parser.tags.length</span>
-<span class="cstat-no" title="statement not covered" >    while (s-- &gt; t) {</span>
-<span class="cstat-no" title="statement not covered" >      var tag = parser.tag = parser.tags.pop()</span>
-<span class="cstat-no" title="statement not covered" >      parser.tagName = parser.tag.name</span>
-<span class="cstat-no" title="statement not covered" >      emitNode(parser, 'onclosetag', parser.tagName)</span>
+<span class="cstat-no" title="statement not covered">    parser.tagName = tagName</span>
+<span class="cstat-no" title="statement not covered">    var s = parser.tags.length</span>
+<span class="cstat-no" title="statement not covered">    while (s-- &gt; t) {</span>
+<span class="cstat-no" title="statement not covered">      var tag = parser.tag = parser.tags.pop()</span>
+<span class="cstat-no" title="statement not covered">      parser.tagName = parser.tag.name</span>
+<span class="cstat-no" title="statement not covered">      emitNode(parser, 'onclosetag', parser.tagName)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      var x = {}</span>
-<span class="cstat-no" title="statement not covered" >      for (var i in tag.ns) {</span>
-<span class="cstat-no" title="statement not covered" >        x[i] = tag.ns[i]</span>
+<span class="cstat-no" title="statement not covered">      var x = {}</span>
+<span class="cstat-no" title="statement not covered">      for (var i in tag.ns) {</span>
+<span class="cstat-no" title="statement not covered">        x[i] = tag.ns[i]</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      var parent = parser.tags[parser.tags.length - 1] || parser</span>
-<span class="cstat-no" title="statement not covered" >      if (parser.opt.xmlns &amp;&amp; tag.ns !== parent.ns) {</span>
+<span class="cstat-no" title="statement not covered">      var parent = parser.tags[parser.tags.length - 1] || parser</span>
+<span class="cstat-no" title="statement not covered">      if (parser.opt.xmlns &amp;&amp; tag.ns !== parent.ns) {</span>
         // remove namespace bindings introduced by tag
-<span class="cstat-no" title="statement not covered" >        Object.keys(tag.ns).forEach(<span class="fstat-no" title="function not covered" >function (p) {</span></span>
-<span class="cstat-no" title="statement not covered" >          var n = tag.ns[p]</span>
-<span class="cstat-no" title="statement not covered" >          emitNode(parser, 'onclosenamespace', { prefix: p, uri: n })</span>
+<span class="cstat-no" title="statement not covered">        Object.keys(tag.ns).forEach(<span class="fstat-no" title="function not covered">function (p) {</span></span>
+<span class="cstat-no" title="statement not covered">          var n = tag.ns[p]</span>
+<span class="cstat-no" title="statement not covered">          emitNode(parser, 'onclosenamespace', { prefix: p, uri: n })</span>
         })
       }
     }
-<span class="cstat-no" title="statement not covered" >    if (t === 0) <span class="cstat-no" title="statement not covered" >parser.closedRoot = true</span></span>
-<span class="cstat-no" title="statement not covered" >    parser.tagName = parser.attribValue = parser.attribName = ''</span>
-<span class="cstat-no" title="statement not covered" >    parser.attribList.length = 0</span>
-<span class="cstat-no" title="statement not covered" >    parser.state = S.TEXT</span>
+<span class="cstat-no" title="statement not covered">    if (t === 0) <span class="cstat-no" title="statement not covered">parser.closedRoot = true</span></span>
+<span class="cstat-no" title="statement not covered">    parser.tagName = parser.attribValue = parser.attribName = ''</span>
+<span class="cstat-no" title="statement not covered">    parser.attribList.length = 0</span>
+<span class="cstat-no" title="statement not covered">    parser.state = S.TEXT</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function parseEntity (parser) {</span>
-<span class="cstat-no" title="statement not covered" >    var entity = parser.entity</span>
-<span class="cstat-no" title="statement not covered" >    var entityLC = entity.toLowerCase()</span>
-<span class="cstat-no" title="statement not covered" >    var num</span>
-<span class="cstat-no" title="statement not covered" >    var numStr = ''</span>
+<span class="fstat-no" title="function not covered">  function parseEntity (parser) {</span>
+<span class="cstat-no" title="statement not covered">    var entity = parser.entity</span>
+<span class="cstat-no" title="statement not covered">    var entityLC = entity.toLowerCase()</span>
+<span class="cstat-no" title="statement not covered">    var num</span>
+<span class="cstat-no" title="statement not covered">    var numStr = ''</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (parser.ENTITIES[entity]) {</span>
-<span class="cstat-no" title="statement not covered" >      return parser.ENTITIES[entity]</span>
+<span class="cstat-no" title="statement not covered">    if (parser.ENTITIES[entity]) {</span>
+<span class="cstat-no" title="statement not covered">      return parser.ENTITIES[entity]</span>
     }
-<span class="cstat-no" title="statement not covered" >    if (parser.ENTITIES[entityLC]) {</span>
-<span class="cstat-no" title="statement not covered" >      return parser.ENTITIES[entityLC]</span>
+<span class="cstat-no" title="statement not covered">    if (parser.ENTITIES[entityLC]) {</span>
+<span class="cstat-no" title="statement not covered">      return parser.ENTITIES[entityLC]</span>
     }
-<span class="cstat-no" title="statement not covered" >    entity = entityLC</span>
-<span class="cstat-no" title="statement not covered" >    if (entity.charAt(0) === '#') {</span>
-<span class="cstat-no" title="statement not covered" >      if (entity.charAt(1) === 'x') {</span>
-<span class="cstat-no" title="statement not covered" >        entity = entity.slice(2)</span>
-<span class="cstat-no" title="statement not covered" >        num = parseInt(entity, 16)</span>
-<span class="cstat-no" title="statement not covered" >        numStr = num.toString(16)</span>
+<span class="cstat-no" title="statement not covered">    entity = entityLC</span>
+<span class="cstat-no" title="statement not covered">    if (entity.charAt(0) === '#') {</span>
+<span class="cstat-no" title="statement not covered">      if (entity.charAt(1) === 'x') {</span>
+<span class="cstat-no" title="statement not covered">        entity = entity.slice(2)</span>
+<span class="cstat-no" title="statement not covered">        num = parseInt(entity, 16)</span>
+<span class="cstat-no" title="statement not covered">        numStr = num.toString(16)</span>
       } else {
-<span class="cstat-no" title="statement not covered" >        entity = entity.slice(1)</span>
-<span class="cstat-no" title="statement not covered" >        num = parseInt(entity, 10)</span>
-<span class="cstat-no" title="statement not covered" >        numStr = num.toString(10)</span>
+<span class="cstat-no" title="statement not covered">        entity = entity.slice(1)</span>
+<span class="cstat-no" title="statement not covered">        num = parseInt(entity, 10)</span>
+<span class="cstat-no" title="statement not covered">        numStr = num.toString(10)</span>
       }
     }
-<span class="cstat-no" title="statement not covered" >    entity = entity.replace(/^0+/, '')</span>
-<span class="cstat-no" title="statement not covered" >    if (numStr.toLowerCase() !== entity) {</span>
-<span class="cstat-no" title="statement not covered" >      strictFail(parser, 'Invalid character entity')</span>
-<span class="cstat-no" title="statement not covered" >      return '&amp;' + parser.entity + ';'</span>
+<span class="cstat-no" title="statement not covered">    entity = entity.replace(/^0+/, '')</span>
+<span class="cstat-no" title="statement not covered">    if (numStr.toLowerCase() !== entity) {</span>
+<span class="cstat-no" title="statement not covered">      strictFail(parser, 'Invalid character entity')</span>
+<span class="cstat-no" title="statement not covered">      return '&amp;' + parser.entity + ';'</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return String.fromCodePoint(num)</span>
+<span class="cstat-no" title="statement not covered">    return String.fromCodePoint(num)</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function beginWhiteSpace (parser, c) {</span>
-<span class="cstat-no" title="statement not covered" >    if (c === '&lt;') {</span>
-<span class="cstat-no" title="statement not covered" >      parser.state = S.OPEN_WAKA</span>
-<span class="cstat-no" title="statement not covered" >      parser.startTagPosition = parser.position</span>
-    } else <span class="cstat-no" title="statement not covered" >if (not(whitespace, c)) {</span>
+<span class="fstat-no" title="function not covered">  function beginWhiteSpace (parser, c) {</span>
+<span class="cstat-no" title="statement not covered">    if (c === '&lt;') {</span>
+<span class="cstat-no" title="statement not covered">      parser.state = S.OPEN_WAKA</span>
+<span class="cstat-no" title="statement not covered">      parser.startTagPosition = parser.position</span>
+    } else <span class="cstat-no" title="statement not covered">if (not(whitespace, c)) {</span>
       // have to process this as a text node.
       // weird, but happens.
-<span class="cstat-no" title="statement not covered" >      strictFail(parser, 'Non-whitespace before first tag.')</span>
-<span class="cstat-no" title="statement not covered" >      parser.textNode = c</span>
-<span class="cstat-no" title="statement not covered" >      parser.state = S.TEXT</span>
+<span class="cstat-no" title="statement not covered">      strictFail(parser, 'Non-whitespace before first tag.')</span>
+<span class="cstat-no" title="statement not covered">      parser.textNode = c</span>
+<span class="cstat-no" title="statement not covered">      parser.state = S.TEXT</span>
     }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function charAt (chunk, i) {</span>
-<span class="cstat-no" title="statement not covered" >    var result = ''</span>
-<span class="cstat-no" title="statement not covered" >    if (i &lt; chunk.length) {</span>
-<span class="cstat-no" title="statement not covered" >      result = chunk.charAt(i)</span>
+<span class="fstat-no" title="function not covered">  function charAt (chunk, i) {</span>
+<span class="cstat-no" title="statement not covered">    var result = ''</span>
+<span class="cstat-no" title="statement not covered">    if (i &lt; chunk.length) {</span>
+<span class="cstat-no" title="statement not covered">      result = chunk.charAt(i)</span>
     }
-<span class="cstat-no" title="statement not covered" >    return result</span>
+<span class="cstat-no" title="statement not covered">    return result</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function write (chunk) {</span>
-<span class="cstat-no" title="statement not covered" >    var parser = this</span>
-<span class="cstat-no" title="statement not covered" >    if (this.error) {</span>
-<span class="cstat-no" title="statement not covered" >      throw this.error</span>
+<span class="fstat-no" title="function not covered">  function write (chunk) {</span>
+<span class="cstat-no" title="statement not covered">    var parser = this</span>
+<span class="cstat-no" title="statement not covered">    if (this.error) {</span>
+<span class="cstat-no" title="statement not covered">      throw this.error</span>
     }
-<span class="cstat-no" title="statement not covered" >    if (parser.closed) {</span>
-<span class="cstat-no" title="statement not covered" >      return error(parser,</span>
+<span class="cstat-no" title="statement not covered">    if (parser.closed) {</span>
+<span class="cstat-no" title="statement not covered">      return error(parser,</span>
         'Cannot write after close. Assign an onready handler.')
     }
-<span class="cstat-no" title="statement not covered" >    if (chunk === null) {</span>
-<span class="cstat-no" title="statement not covered" >      return end(parser)</span>
+<span class="cstat-no" title="statement not covered">    if (chunk === null) {</span>
+<span class="cstat-no" title="statement not covered">      return end(parser)</span>
     }
-<span class="cstat-no" title="statement not covered" >    if (typeof chunk === 'object') {</span>
-<span class="cstat-no" title="statement not covered" >      chunk = chunk.toString()</span>
+<span class="cstat-no" title="statement not covered">    if (typeof chunk === 'object') {</span>
+<span class="cstat-no" title="statement not covered">      chunk = chunk.toString()</span>
     }
-<span class="cstat-no" title="statement not covered" >    var i = 0</span>
-<span class="cstat-no" title="statement not covered" >    var c = ''</span>
-<span class="cstat-no" title="statement not covered" >    while (true) {</span>
-<span class="cstat-no" title="statement not covered" >      c = charAt(chunk, i++)</span>
-<span class="cstat-no" title="statement not covered" >      parser.c = c</span>
+<span class="cstat-no" title="statement not covered">    var i = 0</span>
+<span class="cstat-no" title="statement not covered">    var c = ''</span>
+<span class="cstat-no" title="statement not covered">    while (true) {</span>
+<span class="cstat-no" title="statement not covered">      c = charAt(chunk, i++)</span>
+<span class="cstat-no" title="statement not covered">      parser.c = c</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      if (!c) {</span>
-<span class="cstat-no" title="statement not covered" >        break</span>
+<span class="cstat-no" title="statement not covered">      if (!c) {</span>
+<span class="cstat-no" title="statement not covered">        break</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      if (parser.trackPosition) {</span>
-<span class="cstat-no" title="statement not covered" >        parser.position++</span>
-<span class="cstat-no" title="statement not covered" >        if (c === '\n') {</span>
-<span class="cstat-no" title="statement not covered" >          parser.line++</span>
-<span class="cstat-no" title="statement not covered" >          parser.column = 0</span>
+<span class="cstat-no" title="statement not covered">      if (parser.trackPosition) {</span>
+<span class="cstat-no" title="statement not covered">        parser.position++</span>
+<span class="cstat-no" title="statement not covered">        if (c === '\n') {</span>
+<span class="cstat-no" title="statement not covered">          parser.line++</span>
+<span class="cstat-no" title="statement not covered">          parser.column = 0</span>
         } else {
-<span class="cstat-no" title="statement not covered" >          parser.column++</span>
+<span class="cstat-no" title="statement not covered">          parser.column++</span>
         }
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      switch (parser.state) {</span>
+<span class="cstat-no" title="statement not covered">      switch (parser.state) {</span>
         case S.BEGIN:
-<span class="cstat-no" title="statement not covered" >          parser.state = S.BEGIN_WHITESPACE</span>
-<span class="cstat-no" title="statement not covered" >          if (c === '\uFEFF') {</span>
-<span class="cstat-no" title="statement not covered" >            continue</span>
+<span class="cstat-no" title="statement not covered">          parser.state = S.BEGIN_WHITESPACE</span>
+<span class="cstat-no" title="statement not covered">          if (c === '\uFEFF') {</span>
+<span class="cstat-no" title="statement not covered">            continue</span>
           }
-<span class="cstat-no" title="statement not covered" >          beginWhiteSpace(parser, c)</span>
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          beginWhiteSpace(parser, c)</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.BEGIN_WHITESPACE:
-<span class="cstat-no" title="statement not covered" >          beginWhiteSpace(parser, c)</span>
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          beginWhiteSpace(parser, c)</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.TEXT:
-<span class="cstat-no" title="statement not covered" >          if (parser.sawRoot &amp;&amp; !parser.closedRoot) {</span>
-<span class="cstat-no" title="statement not covered" >            var starti = i - 1</span>
-<span class="cstat-no" title="statement not covered" >            while (c &amp;&amp; c !== '&lt;' &amp;&amp; c !== '&amp;') {</span>
-<span class="cstat-no" title="statement not covered" >              c = charAt(chunk, i++)</span>
-<span class="cstat-no" title="statement not covered" >              if (c &amp;&amp; parser.trackPosition) {</span>
-<span class="cstat-no" title="statement not covered" >                parser.position++</span>
-<span class="cstat-no" title="statement not covered" >                if (c === '\n') {</span>
-<span class="cstat-no" title="statement not covered" >                  parser.line++</span>
-<span class="cstat-no" title="statement not covered" >                  parser.column = 0</span>
+<span class="cstat-no" title="statement not covered">          if (parser.sawRoot &amp;&amp; !parser.closedRoot) {</span>
+<span class="cstat-no" title="statement not covered">            var starti = i - 1</span>
+<span class="cstat-no" title="statement not covered">            while (c &amp;&amp; c !== '&lt;' &amp;&amp; c !== '&amp;') {</span>
+<span class="cstat-no" title="statement not covered">              c = charAt(chunk, i++)</span>
+<span class="cstat-no" title="statement not covered">              if (c &amp;&amp; parser.trackPosition) {</span>
+<span class="cstat-no" title="statement not covered">                parser.position++</span>
+<span class="cstat-no" title="statement not covered">                if (c === '\n') {</span>
+<span class="cstat-no" title="statement not covered">                  parser.line++</span>
+<span class="cstat-no" title="statement not covered">                  parser.column = 0</span>
                 } else {
-<span class="cstat-no" title="statement not covered" >                  parser.column++</span>
+<span class="cstat-no" title="statement not covered">                  parser.column++</span>
                 }
               }
             }
-<span class="cstat-no" title="statement not covered" >            parser.textNode += chunk.substring(starti, i - 1)</span>
+<span class="cstat-no" title="statement not covered">            parser.textNode += chunk.substring(starti, i - 1)</span>
           }
-<span class="cstat-no" title="statement not covered" >          if (c === '&lt;' &amp;&amp; !(parser.sawRoot &amp;&amp; parser.closedRoot &amp;&amp; !parser.strict)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.OPEN_WAKA</span>
-<span class="cstat-no" title="statement not covered" >            parser.startTagPosition = parser.position</span>
+<span class="cstat-no" title="statement not covered">          if (c === '&lt;' &amp;&amp; !(parser.sawRoot &amp;&amp; parser.closedRoot &amp;&amp; !parser.strict)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.OPEN_WAKA</span>
+<span class="cstat-no" title="statement not covered">            parser.startTagPosition = parser.position</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            if (not(whitespace, c) &amp;&amp; (!parser.sawRoot || parser.closedRoot)) {</span>
-<span class="cstat-no" title="statement not covered" >              strictFail(parser, 'Text data outside of root node.')</span>
+<span class="cstat-no" title="statement not covered">            if (not(whitespace, c) &amp;&amp; (!parser.sawRoot || parser.closedRoot)) {</span>
+<span class="cstat-no" title="statement not covered">              strictFail(parser, 'Text data outside of root node.')</span>
             }
-<span class="cstat-no" title="statement not covered" >            if (c === '&amp;') {</span>
-<span class="cstat-no" title="statement not covered" >              parser.state = S.TEXT_ENTITY</span>
+<span class="cstat-no" title="statement not covered">            if (c === '&amp;') {</span>
+<span class="cstat-no" title="statement not covered">              parser.state = S.TEXT_ENTITY</span>
             } else {
-<span class="cstat-no" title="statement not covered" >              parser.textNode += c</span>
+<span class="cstat-no" title="statement not covered">              parser.textNode += c</span>
             }
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.SCRIPT:
           // only non-strict
-<span class="cstat-no" title="statement not covered" >          if (c === '&lt;') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.SCRIPT_ENDING</span>
+<span class="cstat-no" title="statement not covered">          if (c === '&lt;') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.SCRIPT_ENDING</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.script += c</span>
+<span class="cstat-no" title="statement not covered">            parser.script += c</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.SCRIPT_ENDING:
-<span class="cstat-no" title="statement not covered" >          if (c === '/') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.CLOSE_TAG</span>
+<span class="cstat-no" title="statement not covered">          if (c === '/') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.CLOSE_TAG</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.script += '&lt;' + c</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.SCRIPT</span>
+<span class="cstat-no" title="statement not covered">            parser.script += '&lt;' + c</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.SCRIPT</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.OPEN_WAKA:
           // either a /, ?, !, or text is coming next.
-<span class="cstat-no" title="statement not covered" >          if (c === '!') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.SGML_DECL</span>
-<span class="cstat-no" title="statement not covered" >            parser.sgmlDecl = ''</span>
-          } else <span class="cstat-no" title="statement not covered" >if (is(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">          if (c === '!') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.SGML_DECL</span>
+<span class="cstat-no" title="statement not covered">            parser.sgmlDecl = ''</span>
+          } else <span class="cstat-no" title="statement not covered">if (is(whitespace, c)) {</span>
             // wait for it...
-          } else <span class="cstat-no" title="statement not covered" >if (isMatch(nameStart, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.OPEN_TAG</span>
-<span class="cstat-no" title="statement not covered" >            parser.tagName = c</span>
-          } else <span class="cstat-no" title="statement not covered" >if (c === '/') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.CLOSE_TAG</span>
-<span class="cstat-no" title="statement not covered" >            parser.tagName = ''</span>
-          } else <span class="cstat-no" title="statement not covered" >if (c === '?') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.PROC_INST</span>
-<span class="cstat-no" title="statement not covered" >            parser.procInstName = parser.procInstBody = ''</span>
+          } else <span class="cstat-no" title="statement not covered">if (isMatch(nameStart, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.OPEN_TAG</span>
+<span class="cstat-no" title="statement not covered">            parser.tagName = c</span>
+          } else <span class="cstat-no" title="statement not covered">if (c === '/') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.CLOSE_TAG</span>
+<span class="cstat-no" title="statement not covered">            parser.tagName = ''</span>
+          } else <span class="cstat-no" title="statement not covered">if (c === '?') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.PROC_INST</span>
+<span class="cstat-no" title="statement not covered">            parser.procInstName = parser.procInstBody = ''</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'Unencoded &lt;')</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'Unencoded &lt;')</span>
             // if there was some whitespace, then add that in.
-<span class="cstat-no" title="statement not covered" >            if (parser.startTagPosition + 1 &lt; parser.position) {</span>
-<span class="cstat-no" title="statement not covered" >              var pad = parser.position - parser.startTagPosition</span>
-<span class="cstat-no" title="statement not covered" >              c = new Array(pad).join(' ') + c</span>
+<span class="cstat-no" title="statement not covered">            if (parser.startTagPosition + 1 &lt; parser.position) {</span>
+<span class="cstat-no" title="statement not covered">              var pad = parser.position - parser.startTagPosition</span>
+<span class="cstat-no" title="statement not covered">              c = new Array(pad).join(' ') + c</span>
             }
-<span class="cstat-no" title="statement not covered" >            parser.textNode += '&lt;' + c</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.TEXT</span>
+<span class="cstat-no" title="statement not covered">            parser.textNode += '&lt;' + c</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.TEXT</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.SGML_DECL:
-<span class="cstat-no" title="statement not covered" >          if ((parser.sgmlDecl + c).toUpperCase() === CDATA) {</span>
-<span class="cstat-no" title="statement not covered" >            emitNode(parser, 'onopencdata')</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.CDATA</span>
-<span class="cstat-no" title="statement not covered" >            parser.sgmlDecl = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.cdata = ''</span>
-          } else <span class="cstat-no" title="statement not covered" >if (parser.sgmlDecl + c === '--') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.COMMENT</span>
-<span class="cstat-no" title="statement not covered" >            parser.comment = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.sgmlDecl = ''</span>
-          } else <span class="cstat-no" title="statement not covered" >if ((parser.sgmlDecl + c).toUpperCase() === DOCTYPE) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.DOCTYPE</span>
-<span class="cstat-no" title="statement not covered" >            if (parser.doctype || parser.sawRoot) {</span>
-<span class="cstat-no" title="statement not covered" >              strictFail(parser,</span>
+<span class="cstat-no" title="statement not covered">          if ((parser.sgmlDecl + c).toUpperCase() === CDATA) {</span>
+<span class="cstat-no" title="statement not covered">            emitNode(parser, 'onopencdata')</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.CDATA</span>
+<span class="cstat-no" title="statement not covered">            parser.sgmlDecl = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.cdata = ''</span>
+          } else <span class="cstat-no" title="statement not covered">if (parser.sgmlDecl + c === '--') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.COMMENT</span>
+<span class="cstat-no" title="statement not covered">            parser.comment = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.sgmlDecl = ''</span>
+          } else <span class="cstat-no" title="statement not covered">if ((parser.sgmlDecl + c).toUpperCase() === DOCTYPE) {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.DOCTYPE</span>
+<span class="cstat-no" title="statement not covered">            if (parser.doctype || parser.sawRoot) {</span>
+<span class="cstat-no" title="statement not covered">              strictFail(parser,</span>
                 'Inappropriately located doctype declaration')
             }
-<span class="cstat-no" title="statement not covered" >            parser.doctype = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.sgmlDecl = ''</span>
-          } else <span class="cstat-no" title="statement not covered" >if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            emitNode(parser, 'onsgmldeclaration', parser.sgmlDecl)</span>
-<span class="cstat-no" title="statement not covered" >            parser.sgmlDecl = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.TEXT</span>
-          } else <span class="cstat-no" title="statement not covered" >if (is(quote, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.SGML_DECL_QUOTED</span>
-<span class="cstat-no" title="statement not covered" >            parser.sgmlDecl += c</span>
+<span class="cstat-no" title="statement not covered">            parser.doctype = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.sgmlDecl = ''</span>
+          } else <span class="cstat-no" title="statement not covered">if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            emitNode(parser, 'onsgmldeclaration', parser.sgmlDecl)</span>
+<span class="cstat-no" title="statement not covered">            parser.sgmlDecl = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.TEXT</span>
+          } else <span class="cstat-no" title="statement not covered">if (is(quote, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.SGML_DECL_QUOTED</span>
+<span class="cstat-no" title="statement not covered">            parser.sgmlDecl += c</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.sgmlDecl += c</span>
+<span class="cstat-no" title="statement not covered">            parser.sgmlDecl += c</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.SGML_DECL_QUOTED:
-<span class="cstat-no" title="statement not covered" >          if (c === parser.q) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.SGML_DECL</span>
-<span class="cstat-no" title="statement not covered" >            parser.q = ''</span>
+<span class="cstat-no" title="statement not covered">          if (c === parser.q) {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.SGML_DECL</span>
+<span class="cstat-no" title="statement not covered">            parser.q = ''</span>
           }
-<span class="cstat-no" title="statement not covered" >          parser.sgmlDecl += c</span>
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          parser.sgmlDecl += c</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.DOCTYPE:
-<span class="cstat-no" title="statement not covered" >          if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.TEXT</span>
-<span class="cstat-no" title="statement not covered" >            emitNode(parser, 'ondoctype', parser.doctype)</span>
-<span class="cstat-no" title="statement not covered" >            parser.doctype = true </span>// just remember that we saw it.
+<span class="cstat-no" title="statement not covered">          if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.TEXT</span>
+<span class="cstat-no" title="statement not covered">            emitNode(parser, 'ondoctype', parser.doctype)</span>
+<span class="cstat-no" title="statement not covered">            parser.doctype = true </span>// just remember that we saw it.
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.doctype += c</span>
-<span class="cstat-no" title="statement not covered" >            if (c === '[') {</span>
-<span class="cstat-no" title="statement not covered" >              parser.state = S.DOCTYPE_DTD</span>
-            } else <span class="cstat-no" title="statement not covered" >if (is(quote, c)) {</span>
-<span class="cstat-no" title="statement not covered" >              parser.state = S.DOCTYPE_QUOTED</span>
-<span class="cstat-no" title="statement not covered" >              parser.q = c</span>
+<span class="cstat-no" title="statement not covered">            parser.doctype += c</span>
+<span class="cstat-no" title="statement not covered">            if (c === '[') {</span>
+<span class="cstat-no" title="statement not covered">              parser.state = S.DOCTYPE_DTD</span>
+            } else <span class="cstat-no" title="statement not covered">if (is(quote, c)) {</span>
+<span class="cstat-no" title="statement not covered">              parser.state = S.DOCTYPE_QUOTED</span>
+<span class="cstat-no" title="statement not covered">              parser.q = c</span>
             }
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.DOCTYPE_QUOTED:
-<span class="cstat-no" title="statement not covered" >          parser.doctype += c</span>
-<span class="cstat-no" title="statement not covered" >          if (c === parser.q) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.q = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.DOCTYPE</span>
+<span class="cstat-no" title="statement not covered">          parser.doctype += c</span>
+<span class="cstat-no" title="statement not covered">          if (c === parser.q) {</span>
+<span class="cstat-no" title="statement not covered">            parser.q = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.DOCTYPE</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.DOCTYPE_DTD:
-<span class="cstat-no" title="statement not covered" >          parser.doctype += c</span>
-<span class="cstat-no" title="statement not covered" >          if (c === ']') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.DOCTYPE</span>
-          } else <span class="cstat-no" title="statement not covered" >if (is(quote, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.DOCTYPE_DTD_QUOTED</span>
-<span class="cstat-no" title="statement not covered" >            parser.q = c</span>
+<span class="cstat-no" title="statement not covered">          parser.doctype += c</span>
+<span class="cstat-no" title="statement not covered">          if (c === ']') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.DOCTYPE</span>
+          } else <span class="cstat-no" title="statement not covered">if (is(quote, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.DOCTYPE_DTD_QUOTED</span>
+<span class="cstat-no" title="statement not covered">            parser.q = c</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.DOCTYPE_DTD_QUOTED:
-<span class="cstat-no" title="statement not covered" >          parser.doctype += c</span>
-<span class="cstat-no" title="statement not covered" >          if (c === parser.q) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.DOCTYPE_DTD</span>
-<span class="cstat-no" title="statement not covered" >            parser.q = ''</span>
+<span class="cstat-no" title="statement not covered">          parser.doctype += c</span>
+<span class="cstat-no" title="statement not covered">          if (c === parser.q) {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.DOCTYPE_DTD</span>
+<span class="cstat-no" title="statement not covered">            parser.q = ''</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.COMMENT:
-<span class="cstat-no" title="statement not covered" >          if (c === '-') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.COMMENT_ENDING</span>
+<span class="cstat-no" title="statement not covered">          if (c === '-') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.COMMENT_ENDING</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.comment += c</span>
+<span class="cstat-no" title="statement not covered">            parser.comment += c</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.COMMENT_ENDING:
-<span class="cstat-no" title="statement not covered" >          if (c === '-') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.COMMENT_ENDED</span>
-<span class="cstat-no" title="statement not covered" >            parser.comment = textopts(parser.opt, parser.comment)</span>
-<span class="cstat-no" title="statement not covered" >            if (parser.comment) {</span>
-<span class="cstat-no" title="statement not covered" >              emitNode(parser, 'oncomment', parser.comment)</span>
+<span class="cstat-no" title="statement not covered">          if (c === '-') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.COMMENT_ENDED</span>
+<span class="cstat-no" title="statement not covered">            parser.comment = textopts(parser.opt, parser.comment)</span>
+<span class="cstat-no" title="statement not covered">            if (parser.comment) {</span>
+<span class="cstat-no" title="statement not covered">              emitNode(parser, 'oncomment', parser.comment)</span>
             }
-<span class="cstat-no" title="statement not covered" >            parser.comment = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.comment = ''</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.comment += '-' + c</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.COMMENT</span>
+<span class="cstat-no" title="statement not covered">            parser.comment += '-' + c</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.COMMENT</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.COMMENT_ENDED:
-<span class="cstat-no" title="statement not covered" >          if (c !== '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'Malformed comment')</span>
+<span class="cstat-no" title="statement not covered">          if (c !== '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'Malformed comment')</span>
             // allow &lt;!-- blah -- bloo --&gt; in non-strict mode,
             // which is a comment of " blah -- bloo "
-<span class="cstat-no" title="statement not covered" >            parser.comment += '--' + c</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.COMMENT</span>
+<span class="cstat-no" title="statement not covered">            parser.comment += '--' + c</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.COMMENT</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.state = S.TEXT</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.TEXT</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.CDATA:
-<span class="cstat-no" title="statement not covered" >          if (c === ']') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.CDATA_ENDING</span>
+<span class="cstat-no" title="statement not covered">          if (c === ']') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.CDATA_ENDING</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.cdata += c</span>
+<span class="cstat-no" title="statement not covered">            parser.cdata += c</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.CDATA_ENDING:
-<span class="cstat-no" title="statement not covered" >          if (c === ']') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.CDATA_ENDING_2</span>
+<span class="cstat-no" title="statement not covered">          if (c === ']') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.CDATA_ENDING_2</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.cdata += ']' + c</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.CDATA</span>
+<span class="cstat-no" title="statement not covered">            parser.cdata += ']' + c</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.CDATA</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.CDATA_ENDING_2:
-<span class="cstat-no" title="statement not covered" >          if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            if (parser.cdata) {</span>
-<span class="cstat-no" title="statement not covered" >              emitNode(parser, 'oncdata', parser.cdata)</span>
+<span class="cstat-no" title="statement not covered">          if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            if (parser.cdata) {</span>
+<span class="cstat-no" title="statement not covered">              emitNode(parser, 'oncdata', parser.cdata)</span>
             }
-<span class="cstat-no" title="statement not covered" >            emitNode(parser, 'onclosecdata')</span>
-<span class="cstat-no" title="statement not covered" >            parser.cdata = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.TEXT</span>
-          } else <span class="cstat-no" title="statement not covered" >if (c === ']') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.cdata += ']'</span>
+<span class="cstat-no" title="statement not covered">            emitNode(parser, 'onclosecdata')</span>
+<span class="cstat-no" title="statement not covered">            parser.cdata = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.TEXT</span>
+          } else <span class="cstat-no" title="statement not covered">if (c === ']') {</span>
+<span class="cstat-no" title="statement not covered">            parser.cdata += ']'</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.cdata += ']]' + c</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.CDATA</span>
+<span class="cstat-no" title="statement not covered">            parser.cdata += ']]' + c</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.CDATA</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.PROC_INST:
-<span class="cstat-no" title="statement not covered" >          if (c === '?') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.PROC_INST_ENDING</span>
-          } else <span class="cstat-no" title="statement not covered" >if (is(whitespace, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.PROC_INST_BODY</span>
+<span class="cstat-no" title="statement not covered">          if (c === '?') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.PROC_INST_ENDING</span>
+          } else <span class="cstat-no" title="statement not covered">if (is(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.PROC_INST_BODY</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.procInstName += c</span>
+<span class="cstat-no" title="statement not covered">            parser.procInstName += c</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.PROC_INST_BODY:
-<span class="cstat-no" title="statement not covered" >          if (!parser.procInstBody &amp;&amp; is(whitespace, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            continue</span>
-          } else <span class="cstat-no" title="statement not covered" >if (c === '?') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.PROC_INST_ENDING</span>
+<span class="cstat-no" title="statement not covered">          if (!parser.procInstBody &amp;&amp; is(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">            continue</span>
+          } else <span class="cstat-no" title="statement not covered">if (c === '?') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.PROC_INST_ENDING</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.procInstBody += c</span>
+<span class="cstat-no" title="statement not covered">            parser.procInstBody += c</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.PROC_INST_ENDING:
-<span class="cstat-no" title="statement not covered" >          if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            emitNode(parser, 'onprocessinginstruction', {</span>
+<span class="cstat-no" title="statement not covered">          if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            emitNode(parser, 'onprocessinginstruction', {</span>
               name: parser.procInstName,
               body: parser.procInstBody
             })
-<span class="cstat-no" title="statement not covered" >            parser.procInstName = parser.procInstBody = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.TEXT</span>
+<span class="cstat-no" title="statement not covered">            parser.procInstName = parser.procInstBody = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.TEXT</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.procInstBody += '?' + c</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.PROC_INST_BODY</span>
+<span class="cstat-no" title="statement not covered">            parser.procInstBody += '?' + c</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.PROC_INST_BODY</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.OPEN_TAG:
-<span class="cstat-no" title="statement not covered" >          if (isMatch(nameBody, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.tagName += c</span>
+<span class="cstat-no" title="statement not covered">          if (isMatch(nameBody, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.tagName += c</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            newTag(parser)</span>
-<span class="cstat-no" title="statement not covered" >            if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >              openTag(parser)</span>
-            } else <span class="cstat-no" title="statement not covered" >if (c === '/') {</span>
-<span class="cstat-no" title="statement not covered" >              parser.state = S.OPEN_TAG_SLASH</span>
+<span class="cstat-no" title="statement not covered">            newTag(parser)</span>
+<span class="cstat-no" title="statement not covered">            if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">              openTag(parser)</span>
+            } else <span class="cstat-no" title="statement not covered">if (c === '/') {</span>
+<span class="cstat-no" title="statement not covered">              parser.state = S.OPEN_TAG_SLASH</span>
             } else {
-<span class="cstat-no" title="statement not covered" >              if (not(whitespace, c)) {</span>
-<span class="cstat-no" title="statement not covered" >                strictFail(parser, 'Invalid character in tag name')</span>
+<span class="cstat-no" title="statement not covered">              if (not(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">                strictFail(parser, 'Invalid character in tag name')</span>
               }
-<span class="cstat-no" title="statement not covered" >              parser.state = S.ATTRIB</span>
+<span class="cstat-no" title="statement not covered">              parser.state = S.ATTRIB</span>
             }
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.OPEN_TAG_SLASH:
-<span class="cstat-no" title="statement not covered" >          if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            openTag(parser, true)</span>
-<span class="cstat-no" title="statement not covered" >            closeTag(parser)</span>
+<span class="cstat-no" title="statement not covered">          if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            openTag(parser, true)</span>
+<span class="cstat-no" title="statement not covered">            closeTag(parser)</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'Forward-slash in opening tag not followed by &gt;')</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.ATTRIB</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'Forward-slash in opening tag not followed by &gt;')</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.ATTRIB</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.ATTRIB:
           // haven't read the attribute name yet.
-<span class="cstat-no" title="statement not covered" >          if (is(whitespace, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            continue</span>
-          } else <span class="cstat-no" title="statement not covered" >if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            openTag(parser)</span>
-          } else <span class="cstat-no" title="statement not covered" >if (c === '/') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.OPEN_TAG_SLASH</span>
-          } else <span class="cstat-no" title="statement not covered" >if (isMatch(nameStart, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.attribName = c</span>
-<span class="cstat-no" title="statement not covered" >            parser.attribValue = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.ATTRIB_NAME</span>
+<span class="cstat-no" title="statement not covered">          if (is(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">            continue</span>
+          } else <span class="cstat-no" title="statement not covered">if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            openTag(parser)</span>
+          } else <span class="cstat-no" title="statement not covered">if (c === '/') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.OPEN_TAG_SLASH</span>
+          } else <span class="cstat-no" title="statement not covered">if (isMatch(nameStart, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.attribName = c</span>
+<span class="cstat-no" title="statement not covered">            parser.attribValue = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.ATTRIB_NAME</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'Invalid attribute name')</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'Invalid attribute name')</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.ATTRIB_NAME:
-<span class="cstat-no" title="statement not covered" >          if (c === '=') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.ATTRIB_VALUE</span>
-          } else <span class="cstat-no" title="statement not covered" >if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'Attribute without value')</span>
-<span class="cstat-no" title="statement not covered" >            parser.attribValue = parser.attribName</span>
-<span class="cstat-no" title="statement not covered" >            attrib(parser)</span>
-<span class="cstat-no" title="statement not covered" >            openTag(parser)</span>
-          } else <span class="cstat-no" title="statement not covered" >if (is(whitespace, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.ATTRIB_NAME_SAW_WHITE</span>
-          } else <span class="cstat-no" title="statement not covered" >if (isMatch(nameBody, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.attribName += c</span>
+<span class="cstat-no" title="statement not covered">          if (c === '=') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.ATTRIB_VALUE</span>
+          } else <span class="cstat-no" title="statement not covered">if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'Attribute without value')</span>
+<span class="cstat-no" title="statement not covered">            parser.attribValue = parser.attribName</span>
+<span class="cstat-no" title="statement not covered">            attrib(parser)</span>
+<span class="cstat-no" title="statement not covered">            openTag(parser)</span>
+          } else <span class="cstat-no" title="statement not covered">if (is(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.ATTRIB_NAME_SAW_WHITE</span>
+          } else <span class="cstat-no" title="statement not covered">if (isMatch(nameBody, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.attribName += c</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'Invalid attribute name')</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'Invalid attribute name')</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.ATTRIB_NAME_SAW_WHITE:
-<span class="cstat-no" title="statement not covered" >          if (c === '=') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.ATTRIB_VALUE</span>
-          } else <span class="cstat-no" title="statement not covered" >if (is(whitespace, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            continue</span>
+<span class="cstat-no" title="statement not covered">          if (c === '=') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.ATTRIB_VALUE</span>
+          } else <span class="cstat-no" title="statement not covered">if (is(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">            continue</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'Attribute without value')</span>
-<span class="cstat-no" title="statement not covered" >            parser.tag.attributes[parser.attribName] = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.attribValue = ''</span>
-<span class="cstat-no" title="statement not covered" >            emitNode(parser, 'onattribute', {</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'Attribute without value')</span>
+<span class="cstat-no" title="statement not covered">            parser.tag.attributes[parser.attribName] = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.attribValue = ''</span>
+<span class="cstat-no" title="statement not covered">            emitNode(parser, 'onattribute', {</span>
               name: parser.attribName,
               value: ''
             })
-<span class="cstat-no" title="statement not covered" >            parser.attribName = ''</span>
-<span class="cstat-no" title="statement not covered" >            if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >              openTag(parser)</span>
-            } else <span class="cstat-no" title="statement not covered" >if (isMatch(nameStart, c)) {</span>
-<span class="cstat-no" title="statement not covered" >              parser.attribName = c</span>
-<span class="cstat-no" title="statement not covered" >              parser.state = S.ATTRIB_NAME</span>
+<span class="cstat-no" title="statement not covered">            parser.attribName = ''</span>
+<span class="cstat-no" title="statement not covered">            if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">              openTag(parser)</span>
+            } else <span class="cstat-no" title="statement not covered">if (isMatch(nameStart, c)) {</span>
+<span class="cstat-no" title="statement not covered">              parser.attribName = c</span>
+<span class="cstat-no" title="statement not covered">              parser.state = S.ATTRIB_NAME</span>
             } else {
-<span class="cstat-no" title="statement not covered" >              strictFail(parser, 'Invalid attribute name')</span>
-<span class="cstat-no" title="statement not covered" >              parser.state = S.ATTRIB</span>
+<span class="cstat-no" title="statement not covered">              strictFail(parser, 'Invalid attribute name')</span>
+<span class="cstat-no" title="statement not covered">              parser.state = S.ATTRIB</span>
             }
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.ATTRIB_VALUE:
-<span class="cstat-no" title="statement not covered" >          if (is(whitespace, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            continue</span>
-          } else <span class="cstat-no" title="statement not covered" >if (is(quote, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.q = c</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.ATTRIB_VALUE_QUOTED</span>
+<span class="cstat-no" title="statement not covered">          if (is(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">            continue</span>
+          } else <span class="cstat-no" title="statement not covered">if (is(quote, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.q = c</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.ATTRIB_VALUE_QUOTED</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'Unquoted attribute value')</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.ATTRIB_VALUE_UNQUOTED</span>
-<span class="cstat-no" title="statement not covered" >            parser.attribValue = c</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'Unquoted attribute value')</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.ATTRIB_VALUE_UNQUOTED</span>
+<span class="cstat-no" title="statement not covered">            parser.attribValue = c</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.ATTRIB_VALUE_QUOTED:
-<span class="cstat-no" title="statement not covered" >          if (c !== parser.q) {</span>
-<span class="cstat-no" title="statement not covered" >            if (c === '&amp;') {</span>
-<span class="cstat-no" title="statement not covered" >              parser.state = S.ATTRIB_VALUE_ENTITY_Q</span>
+<span class="cstat-no" title="statement not covered">          if (c !== parser.q) {</span>
+<span class="cstat-no" title="statement not covered">            if (c === '&amp;') {</span>
+<span class="cstat-no" title="statement not covered">              parser.state = S.ATTRIB_VALUE_ENTITY_Q</span>
             } else {
-<span class="cstat-no" title="statement not covered" >              parser.attribValue += c</span>
+<span class="cstat-no" title="statement not covered">              parser.attribValue += c</span>
             }
-<span class="cstat-no" title="statement not covered" >            continue</span>
+<span class="cstat-no" title="statement not covered">            continue</span>
           }
-<span class="cstat-no" title="statement not covered" >          attrib(parser)</span>
-<span class="cstat-no" title="statement not covered" >          parser.q = ''</span>
-<span class="cstat-no" title="statement not covered" >          parser.state = S.ATTRIB_VALUE_CLOSED</span>
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          attrib(parser)</span>
+<span class="cstat-no" title="statement not covered">          parser.q = ''</span>
+<span class="cstat-no" title="statement not covered">          parser.state = S.ATTRIB_VALUE_CLOSED</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.ATTRIB_VALUE_CLOSED:
-<span class="cstat-no" title="statement not covered" >          if (is(whitespace, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.ATTRIB</span>
-          } else <span class="cstat-no" title="statement not covered" >if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            openTag(parser)</span>
-          } else <span class="cstat-no" title="statement not covered" >if (c === '/') {</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.OPEN_TAG_SLASH</span>
-          } else <span class="cstat-no" title="statement not covered" >if (isMatch(nameStart, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'No whitespace between attributes')</span>
-<span class="cstat-no" title="statement not covered" >            parser.attribName = c</span>
-<span class="cstat-no" title="statement not covered" >            parser.attribValue = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.ATTRIB_NAME</span>
+<span class="cstat-no" title="statement not covered">          if (is(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.ATTRIB</span>
+          } else <span class="cstat-no" title="statement not covered">if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            openTag(parser)</span>
+          } else <span class="cstat-no" title="statement not covered">if (c === '/') {</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.OPEN_TAG_SLASH</span>
+          } else <span class="cstat-no" title="statement not covered">if (isMatch(nameStart, c)) {</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'No whitespace between attributes')</span>
+<span class="cstat-no" title="statement not covered">            parser.attribName = c</span>
+<span class="cstat-no" title="statement not covered">            parser.attribValue = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.ATTRIB_NAME</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'Invalid attribute name')</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'Invalid attribute name')</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.ATTRIB_VALUE_UNQUOTED:
-<span class="cstat-no" title="statement not covered" >          if (not(attribEnd, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            if (c === '&amp;') {</span>
-<span class="cstat-no" title="statement not covered" >              parser.state = S.ATTRIB_VALUE_ENTITY_U</span>
+<span class="cstat-no" title="statement not covered">          if (not(attribEnd, c)) {</span>
+<span class="cstat-no" title="statement not covered">            if (c === '&amp;') {</span>
+<span class="cstat-no" title="statement not covered">              parser.state = S.ATTRIB_VALUE_ENTITY_U</span>
             } else {
-<span class="cstat-no" title="statement not covered" >              parser.attribValue += c</span>
+<span class="cstat-no" title="statement not covered">              parser.attribValue += c</span>
             }
-<span class="cstat-no" title="statement not covered" >            continue</span>
+<span class="cstat-no" title="statement not covered">            continue</span>
           }
-<span class="cstat-no" title="statement not covered" >          attrib(parser)</span>
-<span class="cstat-no" title="statement not covered" >          if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            openTag(parser)</span>
+<span class="cstat-no" title="statement not covered">          attrib(parser)</span>
+<span class="cstat-no" title="statement not covered">          if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            openTag(parser)</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            parser.state = S.ATTRIB</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.ATTRIB</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.CLOSE_TAG:
-<span class="cstat-no" title="statement not covered" >          if (!parser.tagName) {</span>
-<span class="cstat-no" title="statement not covered" >            if (is(whitespace, c)) {</span>
-<span class="cstat-no" title="statement not covered" >              continue</span>
-            } else <span class="cstat-no" title="statement not covered" >if (notMatch(nameStart, c)) {</span>
-<span class="cstat-no" title="statement not covered" >              if (parser.script) {</span>
-<span class="cstat-no" title="statement not covered" >                parser.script += '&lt;/' + c</span>
-<span class="cstat-no" title="statement not covered" >                parser.state = S.SCRIPT</span>
+<span class="cstat-no" title="statement not covered">          if (!parser.tagName) {</span>
+<span class="cstat-no" title="statement not covered">            if (is(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">              continue</span>
+            } else <span class="cstat-no" title="statement not covered">if (notMatch(nameStart, c)) {</span>
+<span class="cstat-no" title="statement not covered">              if (parser.script) {</span>
+<span class="cstat-no" title="statement not covered">                parser.script += '&lt;/' + c</span>
+<span class="cstat-no" title="statement not covered">                parser.state = S.SCRIPT</span>
               } else {
-<span class="cstat-no" title="statement not covered" >                strictFail(parser, 'Invalid tagname in closing tag.')</span>
+<span class="cstat-no" title="statement not covered">                strictFail(parser, 'Invalid tagname in closing tag.')</span>
               }
             } else {
-<span class="cstat-no" title="statement not covered" >              parser.tagName = c</span>
+<span class="cstat-no" title="statement not covered">              parser.tagName = c</span>
             }
-          } else <span class="cstat-no" title="statement not covered" >if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            closeTag(parser)</span>
-          } else <span class="cstat-no" title="statement not covered" >if (isMatch(nameBody, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.tagName += c</span>
-          } else <span class="cstat-no" title="statement not covered" >if (parser.script) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.script += '&lt;/' + parser.tagName</span>
-<span class="cstat-no" title="statement not covered" >            parser.tagName = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = S.SCRIPT</span>
+          } else <span class="cstat-no" title="statement not covered">if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            closeTag(parser)</span>
+          } else <span class="cstat-no" title="statement not covered">if (isMatch(nameBody, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.tagName += c</span>
+          } else <span class="cstat-no" title="statement not covered">if (parser.script) {</span>
+<span class="cstat-no" title="statement not covered">            parser.script += '&lt;/' + parser.tagName</span>
+<span class="cstat-no" title="statement not covered">            parser.tagName = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.SCRIPT</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            if (not(whitespace, c)) {</span>
-<span class="cstat-no" title="statement not covered" >              strictFail(parser, 'Invalid tagname in closing tag')</span>
+<span class="cstat-no" title="statement not covered">            if (not(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">              strictFail(parser, 'Invalid tagname in closing tag')</span>
             }
-<span class="cstat-no" title="statement not covered" >            parser.state = S.CLOSE_TAG_SAW_WHITE</span>
+<span class="cstat-no" title="statement not covered">            parser.state = S.CLOSE_TAG_SAW_WHITE</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.CLOSE_TAG_SAW_WHITE:
-<span class="cstat-no" title="statement not covered" >          if (is(whitespace, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            continue</span>
+<span class="cstat-no" title="statement not covered">          if (is(whitespace, c)) {</span>
+<span class="cstat-no" title="statement not covered">            continue</span>
           }
-<span class="cstat-no" title="statement not covered" >          if (c === '&gt;') {</span>
-<span class="cstat-no" title="statement not covered" >            closeTag(parser)</span>
+<span class="cstat-no" title="statement not covered">          if (c === '&gt;') {</span>
+<span class="cstat-no" title="statement not covered">            closeTag(parser)</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'Invalid characters in closing tag')</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'Invalid characters in closing tag')</span>
           }
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         case S.TEXT_ENTITY:
         case S.ATTRIB_VALUE_ENTITY_Q:
         case S.ATTRIB_VALUE_ENTITY_U:
-<span class="cstat-no" title="statement not covered" >          var returnState</span>
-<span class="cstat-no" title="statement not covered" >          var buffer</span>
-<span class="cstat-no" title="statement not covered" >          switch (parser.state) {</span>
+<span class="cstat-no" title="statement not covered">          var returnState</span>
+<span class="cstat-no" title="statement not covered">          var buffer</span>
+<span class="cstat-no" title="statement not covered">          switch (parser.state) {</span>
             case S.TEXT_ENTITY:
-<span class="cstat-no" title="statement not covered" >              returnState = S.TEXT</span>
-<span class="cstat-no" title="statement not covered" >              buffer = 'textNode'</span>
-<span class="cstat-no" title="statement not covered" >              break</span>
+<span class="cstat-no" title="statement not covered">              returnState = S.TEXT</span>
+<span class="cstat-no" title="statement not covered">              buffer = 'textNode'</span>
+<span class="cstat-no" title="statement not covered">              break</span>
 &nbsp;
             case S.ATTRIB_VALUE_ENTITY_Q:
-<span class="cstat-no" title="statement not covered" >              returnState = S.ATTRIB_VALUE_QUOTED</span>
-<span class="cstat-no" title="statement not covered" >              buffer = 'attribValue'</span>
-<span class="cstat-no" title="statement not covered" >              break</span>
+<span class="cstat-no" title="statement not covered">              returnState = S.ATTRIB_VALUE_QUOTED</span>
+<span class="cstat-no" title="statement not covered">              buffer = 'attribValue'</span>
+<span class="cstat-no" title="statement not covered">              break</span>
 &nbsp;
             case S.ATTRIB_VALUE_ENTITY_U:
-<span class="cstat-no" title="statement not covered" >              returnState = S.ATTRIB_VALUE_UNQUOTED</span>
-<span class="cstat-no" title="statement not covered" >              buffer = 'attribValue'</span>
-<span class="cstat-no" title="statement not covered" >              break</span>
+<span class="cstat-no" title="statement not covered">              returnState = S.ATTRIB_VALUE_UNQUOTED</span>
+<span class="cstat-no" title="statement not covered">              buffer = 'attribValue'</span>
+<span class="cstat-no" title="statement not covered">              break</span>
           }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >          if (c === ';') {</span>
-<span class="cstat-no" title="statement not covered" >            parser[buffer] += parseEntity(parser)</span>
-<span class="cstat-no" title="statement not covered" >            parser.entity = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = returnState</span>
-          } else <span class="cstat-no" title="statement not covered" >if (isMatch(parser.entity.length ? entityBody : entityStart, c)) {</span>
-<span class="cstat-no" title="statement not covered" >            parser.entity += c</span>
+<span class="cstat-no" title="statement not covered">          if (c === ';') {</span>
+<span class="cstat-no" title="statement not covered">            parser[buffer] += parseEntity(parser)</span>
+<span class="cstat-no" title="statement not covered">            parser.entity = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.state = returnState</span>
+          } else <span class="cstat-no" title="statement not covered">if (isMatch(parser.entity.length ? entityBody : entityStart, c)) {</span>
+<span class="cstat-no" title="statement not covered">            parser.entity += c</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            strictFail(parser, 'Invalid character in entity name')</span>
-<span class="cstat-no" title="statement not covered" >            parser[buffer] += '&amp;' + parser.entity + c</span>
-<span class="cstat-no" title="statement not covered" >            parser.entity = ''</span>
-<span class="cstat-no" title="statement not covered" >            parser.state = returnState</span>
+<span class="cstat-no" title="statement not covered">            strictFail(parser, 'Invalid character in entity name')</span>
+<span class="cstat-no" title="statement not covered">            parser[buffer] += '&amp;' + parser.entity + c</span>
+<span class="cstat-no" title="statement not covered">            parser.entity = ''</span>
+<span class="cstat-no" title="statement not covered">            parser.state = returnState</span>
           }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >          continue</span>
+<span class="cstat-no" title="statement not covered">          continue</span>
 &nbsp;
         default:
-<span class="cstat-no" title="statement not covered" >          throw new Error(parser, 'Unknown state: ' + parser.state)</span>
+<span class="cstat-no" title="statement not covered">          throw new Error(parser, 'Unknown state: ' + parser.state)</span>
       }
     } // while
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (parser.position &gt;= parser.bufferCheckPosition) {</span>
-<span class="cstat-no" title="statement not covered" >      checkBufferLength(parser)</span>
+<span class="cstat-no" title="statement not covered">    if (parser.position &gt;= parser.bufferCheckPosition) {</span>
+<span class="cstat-no" title="statement not covered">      checkBufferLength(parser)</span>
     }
-<span class="cstat-no" title="statement not covered" >    return parser</span>
+<span class="cstat-no" title="statement not covered">    return parser</span>
   }
 &nbsp;
   /*! http://mths.be/fromcodepoint v0.1.0 by @mathias */
   /* istanbul ignore next */
-  <span class="skip-if-branch" title="if path not taken" >I</span>if (!String.fromCodePoint) {
-<span class="cstat-skip" title="statement not covered" >    (<span class="fstat-skip" title="function not covered" >function () {</span></span>
-<span class="cstat-skip" title="statement not covered" >      var stringFromCharCode = String.fromCharCode</span>
-<span class="cstat-skip" title="statement not covered" >      var floor = Math.floor</span>
-<span class="cstat-skip" title="statement not covered" >      var fromCodePoint = <span class="fstat-skip" title="function not covered" >function () {</span></span>
-<span class="cstat-skip" title="statement not covered" >        var MAX_SIZE = 0x4000</span>
-<span class="cstat-skip" title="statement not covered" >        var codeUnits = []</span>
-<span class="cstat-skip" title="statement not covered" >        var highSurrogate</span>
-<span class="cstat-skip" title="statement not covered" >        var lowSurrogate</span>
-<span class="cstat-skip" title="statement not covered" >        var index = -1</span>
-<span class="cstat-skip" title="statement not covered" >        var length = arguments.length</span>
-<span class="cstat-skip" title="statement not covered" >        if (!length) {</span>
-<span class="cstat-skip" title="statement not covered" >          return ''</span>
+  <span class="skip-if-branch" title="if path not taken">I</span>if (!String.fromCodePoint) {
+<span class="cstat-skip" title="statement not covered">    (<span class="fstat-skip" title="function not covered">function () {</span></span>
+<span class="cstat-skip" title="statement not covered">      var stringFromCharCode = String.fromCharCode</span>
+<span class="cstat-skip" title="statement not covered">      var floor = Math.floor</span>
+<span class="cstat-skip" title="statement not covered">      var fromCodePoint = <span class="fstat-skip" title="function not covered">function () {</span></span>
+<span class="cstat-skip" title="statement not covered">        var MAX_SIZE = 0x4000</span>
+<span class="cstat-skip" title="statement not covered">        var codeUnits = []</span>
+<span class="cstat-skip" title="statement not covered">        var highSurrogate</span>
+<span class="cstat-skip" title="statement not covered">        var lowSurrogate</span>
+<span class="cstat-skip" title="statement not covered">        var index = -1</span>
+<span class="cstat-skip" title="statement not covered">        var length = arguments.length</span>
+<span class="cstat-skip" title="statement not covered">        if (!length) {</span>
+<span class="cstat-skip" title="statement not covered">          return ''</span>
         }
-<span class="cstat-skip" title="statement not covered" >        var result = ''</span>
-<span class="cstat-skip" title="statement not covered" >        while (++index &lt; length) {</span>
-<span class="cstat-skip" title="statement not covered" >          var codePoint = Number(arguments[index])</span>
-<span class="cstat-skip" title="statement not covered" >          if (</span>
+<span class="cstat-skip" title="statement not covered">        var result = ''</span>
+<span class="cstat-skip" title="statement not covered">        while (++index &lt; length) {</span>
+<span class="cstat-skip" title="statement not covered">          var codePoint = Number(arguments[index])</span>
+<span class="cstat-skip" title="statement not covered">          if (</span>
             !isFinite(codePoint) || // `NaN`, `+Infinity`, or `-Infinity`
             codePoint &lt; 0 || // not a valid Unicode code point
             codePoint &gt; 0x10FFFF || // not a valid Unicode code point
             floor(codePoint) !== codePoint // not an integer
           ) {
-<span class="cstat-skip" title="statement not covered" >            throw RangeError('Invalid code point: ' + codePoint)</span>
+<span class="cstat-skip" title="statement not covered">            throw RangeError('Invalid code point: ' + codePoint)</span>
           }
-<span class="cstat-skip" title="statement not covered" >          if (codePoint &lt;= 0xFFFF) { // BMP code point</span>
-<span class="cstat-skip" title="statement not covered" >            codeUnits.push(codePoint)</span>
+<span class="cstat-skip" title="statement not covered">          if (codePoint &lt;= 0xFFFF) { // BMP code point</span>
+<span class="cstat-skip" title="statement not covered">            codeUnits.push(codePoint)</span>
           } else { // Astral code point; split in surrogate halves
             // http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
-<span class="cstat-skip" title="statement not covered" >            codePoint -= 0x10000</span>
-<span class="cstat-skip" title="statement not covered" >            highSurrogate = (codePoint &gt;&gt; 10) + 0xD800</span>
-<span class="cstat-skip" title="statement not covered" >            lowSurrogate = (codePoint % 0x400) + 0xDC00</span>
-<span class="cstat-skip" title="statement not covered" >            codeUnits.push(highSurrogate, lowSurrogate)</span>
+<span class="cstat-skip" title="statement not covered">            codePoint -= 0x10000</span>
+<span class="cstat-skip" title="statement not covered">            highSurrogate = (codePoint &gt;&gt; 10) + 0xD800</span>
+<span class="cstat-skip" title="statement not covered">            lowSurrogate = (codePoint % 0x400) + 0xDC00</span>
+<span class="cstat-skip" title="statement not covered">            codeUnits.push(highSurrogate, lowSurrogate)</span>
           }
-<span class="cstat-skip" title="statement not covered" >          if (index + 1 === length || codeUnits.length &gt; MAX_SIZE) {</span>
-<span class="cstat-skip" title="statement not covered" >            result += stringFromCharCode.apply(null, codeUnits)</span>
-<span class="cstat-skip" title="statement not covered" >            codeUnits.length = 0</span>
+<span class="cstat-skip" title="statement not covered">          if (index + 1 === length || codeUnits.length &gt; MAX_SIZE) {</span>
+<span class="cstat-skip" title="statement not covered">            result += stringFromCharCode.apply(null, codeUnits)</span>
+<span class="cstat-skip" title="statement not covered">            codeUnits.length = 0</span>
           }
         }
-<span class="cstat-skip" title="statement not covered" >        return result</span>
+<span class="cstat-skip" title="statement not covered">        return result</span>
       }
       /* istanbul ignore next */
-<span class="cstat-skip" title="statement not covered" >      if (Object.defineProperty) {</span>
-<span class="cstat-skip" title="statement not covered" >        Object.defineProperty(String, 'fromCodePoint', {</span>
+<span class="cstat-skip" title="statement not covered">      if (Object.defineProperty) {</span>
+<span class="cstat-skip" title="statement not covered">        Object.defineProperty(String, 'fromCodePoint', {</span>
           value: fromCodePoint,
           configurable: true,
           writable: true
         })
       } else {
-<span class="cstat-skip" title="statement not covered" >        String.fromCodePoint = fromCodePoint</span>
+<span class="cstat-skip" title="statement not covered">        String.fromCodePoint = fromCodePoint</span>
       }
     }())
   }
-})(typeof exports === 'undefined' ? <span class="branch-0 cbranch-no" title="branch not covered" >this.sax = {} </span>: exports)
+})(typeof exports === 'undefined' ? <span class="branch-0 cbranch-no" title="branch not covered">this.sax = {} </span>: exports)
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 19:43:11 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 20:53:04 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
