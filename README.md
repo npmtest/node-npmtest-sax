@@ -1,7 +1,10 @@
-# test coverage for  [sax (v1.2.2)](https://github.com/isaacs/sax-js#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-sax.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sax) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sax.svg)](https://travis-ci.org/npmtest/node-npmtest-sax)
+# npmtest-sax
+
+#### test coverage for  [sax (v1.2.2)](https://github.com/isaacs/sax-js#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-sax.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sax) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sax.svg)](https://travis-ci.org/npmtest/node-npmtest-sax)
+
 #### An evented streaming XML parser in JavaScript
 
-[![NPM](https://nodei.co/npm/sax.png?downloads=true)](https://www.npmjs.com/package/sax)
+[![NPM](https://nodei.co/npm/sax.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/sax)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-sax/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-sax/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-sax/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sax/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sax/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-sax/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-sax/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-sax/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-sax/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-sax/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-sax%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-sax/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-sax/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-sax/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-sax/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-sax%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sax/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-sax/build/test-report.html](https://npmtest.github.io/node-npmtest-sax/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-sax/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-sax/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-sax/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-sax/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-sax/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sax/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-sax/build/screenCapture.npmPackageListing.svg)
 
@@ -28,7 +37,6 @@
 {
     "author": {
         "name": "Isaac Z. Schlueter",
-        "email": "i@izs.me",
         "url": "http://blog.izs.me/"
     },
     "bugs": {
@@ -36,40 +44,31 @@
     },
     "contributors": [
         {
-            "name": "Isaac Z. Schlueter",
-            "email": "i@izs.me"
+            "name": "Isaac Z. Schlueter"
         },
         {
-            "name": "Stein Martin Hustad",
-            "email": "stein@hustad.com"
+            "name": "Stein Martin Hustad"
         },
         {
-            "name": "Mikeal Rogers",
-            "email": "mikeal.rogers@gmail.com"
+            "name": "Mikeal Rogers"
         },
         {
-            "name": "Laurie Harper",
-            "email": "laurie@holoweb.net"
+            "name": "Laurie Harper"
         },
         {
-            "name": "Jann Horn",
-            "email": "jann@Jann-PC.fritz.box"
+            "name": "Jann Horn"
         },
         {
-            "name": "Elijah Insua",
-            "email": "tmpvar@gmail.com"
+            "name": "Elijah Insua"
         },
         {
-            "name": "Henry Rawas",
-            "email": "henryr@schakra.com"
+            "name": "Henry Rawas"
         },
         {
-            "name": "Justin Makeig",
-            "email": "jmpublic@makeig.com"
+            "name": "Justin Makeig"
         },
         {
-            "name": "Mike Schilling",
-            "email": "mike@emotive.com"
+            "name": "Mike Schilling"
         }
     ],
     "dependencies": {},
@@ -94,13 +93,11 @@
     "main": "lib/sax.js",
     "maintainers": [
         {
-            "name": "isaacs",
-            "email": "i@izs.me"
+            "name": "isaacs"
         }
     ],
     "name": "sax",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/isaacs/sax-js.git"
